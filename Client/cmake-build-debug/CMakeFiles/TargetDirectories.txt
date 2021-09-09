@@ -1,0 +1,3 @@
+/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/cmake-build-debug/CMakeFiles/Client.dir
