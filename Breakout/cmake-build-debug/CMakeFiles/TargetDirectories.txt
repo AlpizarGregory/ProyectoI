@@ -1,0 +1,3 @@
+/home/alpizargregory/Documentos/Datos II/ProyectoI/Breakout/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/alpizargregory/Documentos/Datos II/ProyectoI/Breakout/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/alpizargregory/Documentos/Datos II/ProyectoI/Breakout/cmake-build-debug/CMakeFiles/Breakout.dir
