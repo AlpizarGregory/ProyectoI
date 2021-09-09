@@ -129,53 +129,29 @@ Client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/build
 .PHONY : Client/fast
 
-code/socketClient.o: code/socketClient.cpp.o
-.PHONY : code/socketClient.o
+code/tcpClient.o: code/tcpClient.cpp.o
+.PHONY : code/tcpClient.o
 
 # target to build an object file
-code/socketClient.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/socketClient.cpp.o
-.PHONY : code/socketClient.cpp.o
+code/tcpClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/tcpClient.cpp.o
+.PHONY : code/tcpClient.cpp.o
 
-code/socketClient.i: code/socketClient.cpp.i
-.PHONY : code/socketClient.i
-
-# target to preprocess a source file
-code/socketClient.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/socketClient.cpp.i
-.PHONY : code/socketClient.cpp.i
-
-code/socketClient.s: code/socketClient.cpp.s
-.PHONY : code/socketClient.s
-
-# target to generate assembly for a file
-code/socketClient.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/socketClient.cpp.s
-.PHONY : code/socketClient.cpp.s
-
-main.o: main.cpp.o
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-.PHONY : main.i
+code/tcpClient.i: code/tcpClient.cpp.i
+.PHONY : code/tcpClient.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/main.cpp.i
-.PHONY : main.cpp.i
+code/tcpClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/tcpClient.cpp.i
+.PHONY : code/tcpClient.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+code/tcpClient.s: code/tcpClient.cpp.s
+.PHONY : code/tcpClient.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/main.cpp.s
-.PHONY : main.cpp.s
+code/tcpClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/tcpClient.cpp.s
+.PHONY : code/tcpClient.cpp.s
 
 # Help Target
 help:
@@ -186,12 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Client"
-	@echo "... code/socketClient.o"
-	@echo "... code/socketClient.i"
-	@echo "... code/socketClient.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... code/tcpClient.o"
+	@echo "... code/tcpClient.i"
+	@echo "... code/tcpClient.s"
 .PHONY : help
 
 

@@ -82,10 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/socketClient.cpp">
-			<Option target="Client"/>
-		</Unit>
-		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/main.cpp">
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/tcpClient.cpp">
 			<Option target="Client"/>
 		</Unit>
 		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/CMakeLists.txt">
