@@ -66,27 +66,27 @@ include CMakeFiles/Breakout.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Breakout.dir/flags.make
 
-CMakeFiles/Breakout.dir/main.cpp.o: CMakeFiles/Breakout.dir/flags.make
-CMakeFiles/Breakout.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/alpizargregory/Documentos/Datos II/ProyectoI/Breakout/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Breakout.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Breakout.dir/main.cpp.o -c "/home/alpizargregory/Documentos/Datos II/ProyectoI/Breakout/main.cpp"
+CMakeFiles/Breakout.dir/code/server/socketServer.cpp.o: CMakeFiles/Breakout.dir/flags.make
+CMakeFiles/Breakout.dir/code/server/socketServer.cpp.o: ../code/server/socketServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/alpizargregory/Documentos/Datos II/ProyectoI/Breakout/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Breakout.dir/code/server/socketServer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Breakout.dir/code/server/socketServer.cpp.o -c "/home/alpizargregory/Documentos/Datos II/ProyectoI/Breakout/code/server/socketServer.cpp"
 
-CMakeFiles/Breakout.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Breakout.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/alpizargregory/Documentos/Datos II/ProyectoI/Breakout/main.cpp" > CMakeFiles/Breakout.dir/main.cpp.i
+CMakeFiles/Breakout.dir/code/server/socketServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Breakout.dir/code/server/socketServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/alpizargregory/Documentos/Datos II/ProyectoI/Breakout/code/server/socketServer.cpp" > CMakeFiles/Breakout.dir/code/server/socketServer.cpp.i
 
-CMakeFiles/Breakout.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Breakout.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/alpizargregory/Documentos/Datos II/ProyectoI/Breakout/main.cpp" -o CMakeFiles/Breakout.dir/main.cpp.s
+CMakeFiles/Breakout.dir/code/server/socketServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Breakout.dir/code/server/socketServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/alpizargregory/Documentos/Datos II/ProyectoI/Breakout/code/server/socketServer.cpp" -o CMakeFiles/Breakout.dir/code/server/socketServer.cpp.s
 
 # Object files for target Breakout
 Breakout_OBJECTS = \
-"CMakeFiles/Breakout.dir/main.cpp.o"
+"CMakeFiles/Breakout.dir/code/server/socketServer.cpp.o"
 
 # External object files for target Breakout
 Breakout_EXTERNAL_OBJECTS =
 
-Breakout: CMakeFiles/Breakout.dir/main.cpp.o
+Breakout: CMakeFiles/Breakout.dir/code/server/socketServer.cpp.o
 Breakout: CMakeFiles/Breakout.dir/build.make
 Breakout: CMakeFiles/Breakout.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/alpizargregory/Documentos/Datos II/ProyectoI/Breakout/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Breakout"

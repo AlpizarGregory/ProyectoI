@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/Breakout.dir/main.cpp.o -o Breakout 
+/usr/bin/c++ -g CMakeFiles/Breakout.dir/code/server/socketServer.cpp.o -o Breakout 

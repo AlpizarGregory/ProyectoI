@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "Breakout"
   "Breakout.pdb"
-  "CMakeFiles/Breakout.dir/main.cpp.o"
+  "CMakeFiles/Breakout.dir/code/server/socketServer.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

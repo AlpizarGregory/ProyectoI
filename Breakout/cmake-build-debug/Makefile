@@ -129,29 +129,29 @@ Breakout/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/build
 .PHONY : Breakout/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+code/server/socketServer.o: code/server/socketServer.cpp.o
+.PHONY : code/server/socketServer.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/main.cpp.o
-.PHONY : main.cpp.o
+code/server/socketServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/code/server/socketServer.cpp.o
+.PHONY : code/server/socketServer.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+code/server/socketServer.i: code/server/socketServer.cpp.i
+.PHONY : code/server/socketServer.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/main.cpp.i
-.PHONY : main.cpp.i
+code/server/socketServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/code/server/socketServer.cpp.i
+.PHONY : code/server/socketServer.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+code/server/socketServer.s: code/server/socketServer.cpp.s
+.PHONY : code/server/socketServer.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/main.cpp.s
-.PHONY : main.cpp.s
+code/server/socketServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/code/server/socketServer.cpp.s
+.PHONY : code/server/socketServer.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Breakout"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... code/server/socketServer.o"
+	@echo "... code/server/socketServer.i"
+	@echo "... code/server/socketServer.s"
 .PHONY : help
 
 
