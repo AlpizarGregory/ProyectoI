@@ -11,7 +11,7 @@ set(SFML_DIR "/home/rewieer/Libraries/SFML-2.5.1/lib/cmake/SFML")
 link_directories(SFML_LIBRARY_DIR)
 include_directories(SFML_INCLUDE_DIR)
 
-add_executable(Breakout code/tcpServer.cpp code/main.cpp)
+add_executable(Breakout code/tcpServer.cpp code/main.cpp code/Brick.cpp code/Brick.h code/Paddle.cpp code/Paddle.h code/Ball.cpp code/Ball.h)
 
 find_package(SFML 2.5.1 COMPONENTS system window graphics network audio)
 
