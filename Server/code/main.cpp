@@ -2,8 +2,11 @@
 #include <SFML/Graphics.hpp>
 #include <time.h>
 #include <iostream>
+#include <math.h>
 
-
+#include "Paddle.h"
+#include "Ball.h"
+#include "Brick.h"
 
 using namespace sf;
 using namespace std;
@@ -17,13 +20,7 @@ Text scoreText;
 
 // Variables no fijas
 #include <vector>
-#include <math.h>
-
 #include <cstdlib>
-
-#include "Paddle.h"
-#include "Ball.h"
-#include "Brick.h"
 
 const float pi = 3.14159f;
 
@@ -78,7 +75,7 @@ int main() {
 
     while (window.isOpen()) {
         deltaTime = gameClock.restart().asSeconds();
-//        HandleInput();
+        HandleInput();
 
         if (playing&&!gameOver&&!win) {
             Update();
@@ -91,6 +88,8 @@ int main() {
 }
 
 void Initiate() {
+    font.loadFromFile("consola.ttf");
+
     textureBall.loadFromFile("ball.png");
     textureBack.loadFromFile("back.png");
     texturePaddle.loadFromFile("paddle.png");
@@ -151,36 +150,36 @@ void Update(){
     }
 
     //paddle
-//    if (BallBottom(paddle.picture)) {
-//        int dis = ball.picture.getPosition().x - paddle.picture.getPosition().x;
-//
-//        if (dis > 30 && ball.angle > 1.f / 2.f*pi) {
-//            ball.angle = ball.angle - pi;
-//
-//        } else if (dis < -30 && ball.angle < 1.f / 2.f*pi) {
-//            ball.angle = ball.angle - pi;
-//
-//        } else {
-//            ball.angle = -ball.angle;
-//
-//            if (ball.angle > 1.f / 2.f*pi && ball.angle < 7.f / 8.f*pi) {
-//                ball.angle += (rand() % 15) * pi / 180;
-//
-//            } else if (ball.angle < 1.f / 2.f*pi && ball.angle > 1.f / 8.f*pi) {
-//                ball.angle -= (rand() % 15) * pi / 180;
-//
-//            } else if (ball.angle <= 1.f / 8.f*pi) {
-//                ball.angle += (rand() % 15) * pi / 180;
-//
-//            } else if (ball.angle >= 7.f / 8.f*pi) {
-//                ball.angle -= (rand() % 15) * pi / 180;
-//            }
-//        }
-//
-//        combo = 0;
-//        ball.setPosition(ball.picture.getPosition().x, paddle.picture.getPosition().y - paddle.picture.getSize().y / 2 - ball.picture.getRadius() - 0.1f);
-//
-//    }
+    if (BallBottom(paddle.picture)) {
+        int dis = ball.picture.getPosition().x - paddle.picture.getPosition().x;
+
+        if (dis > 30 && ball.angle > 1.f / 2.f*pi) {
+            ball.angle = ball.angle - pi;
+
+        } else if (dis < -30 && ball.angle < 1.f / 2.f*pi) {
+            ball.angle = ball.angle - pi;
+
+        } else {
+            ball.angle = -ball.angle;
+
+            if (ball.angle > 1.f / 2.f*pi && ball.angle < 7.f / 8.f*pi) {
+                ball.angle += (rand() % 15) * pi / 180;
+
+           } else if (ball.angle < 1.f / 2.f*pi && ball.angle > 1.f / 8.f*pi) {
+                ball.angle -= (rand() % 15) * pi / 180;
+
+            } else if (ball.angle <= 1.f / 8.f*pi) {
+                ball.angle += (rand() % 15) * pi / 180;
+
+            } else if (ball.angle >= 7.f / 8.f*pi) {
+                ball.angle -= (rand() % 15) * pi / 180;
+            }
+        }
+
+        combo = 0;
+        ball.setPosition(ball.picture.getPosition().x, paddle.picture.getPosition().y - paddle.picture.getSize().y / 2 - ball.picture.getRadius() - 0.1f);
+
+    }
 
     //bricks
     for (int i = 0; i < bricks.size(); ++i) {
@@ -200,34 +199,41 @@ void Update(){
 
             }
 
-//            if (BallUp(bricks[i] -> picture)) {
-//                ball.angle = -ball.angle;
-//                ball.setPosition(ball.picture.getPosition().x, bricks[i] -> picture.getPosition().y + bricks[i] -> picture.getSize().y / 2 + ball.picture.getRadius() + 0.1f);
-//
-//                combo++;
-//                score = score + combo * 10;
-//
-//            } else if (BallBottom(bricks[i] -> picture)) {
-//                ball.angle = -ball.angle;
-//                ball.setPosition(ball.picture.getPosition().x, bricks[i] -> picture.getPosition().y - bricks[i] -> picture.getSize().y / 2 - ball.picture.getRadius() - 0.1f);
-//
-//                combo++;
-//                score = score + combo * 10;
-//
-//            } else if (BallLeft(bricks[i] -> picture)) {
-//                ball.angle = pi - ball.angle;
-//                ball.setPosition(bricks[i] -> picture.getPosition().x + ball.picture.getRadius() + bricks[i] -> picture.getSize().x / 2 + 0.1f, ball.picture.getPosition().y);
-//
-//                combo++;
-//                score = score + combo * 10;
-//
-//            } else if (BallRight(bricks[i] -> picture)) {
-//                ball.angle = pi - ball.angle;
-//                ball.setPosition(bricks[i] -> picture.getPosition().x - ball.picture.getRadius() - bricks[i] -> picture.getSize().x / 2 - 0.1f, ball.picture.getPosition().y);
-//
-//                combo++;
-//                score = score + combo * 10;
-//            }
+            if (BallUp(bricks[i] -> picture)) {
+                ball.angle = -ball.angle;
+                ball.setPosition(ball.picture.getPosition().x, bricks[i] -> picture.getPosition().y + bricks[i] -> picture.getSize().y / 2 + ball.picture.getRadius() + 0.1f);
+                if (bricks[i]->hit()){
+
+                }
+                else{}
+                combo++;
+                score = score + combo * 10;
+
+            } else if (BallBottom(bricks[i] -> picture)) {
+                ball.angle = -ball.angle;
+                ball.setPosition(ball.picture.getPosition().x, bricks[i] -> picture.getPosition().y - bricks[i] -> picture.getSize().y / 2 - ball.picture.getRadius() - 0.1f);
+                if (bricks[i]->hit()) {
+                }
+                else{
+
+                }
+                combo++;
+                score = score + combo * 10;
+
+            } else if (BallLeft(bricks[i] -> picture)) {
+                ball.angle = pi - ball.angle;
+                ball.setPosition(bricks[i] -> picture.getPosition().x + ball.picture.getRadius() + bricks[i] -> picture.getSize().x / 2 + 0.1f, ball.picture.getPosition().y);
+
+                combo++;
+                score = score + combo * 10;
+
+            } else if (BallRight(bricks[i] -> picture)) {
+                ball.angle = pi - ball.angle;
+                ball.setPosition(bricks[i] -> picture.getPosition().x - ball.picture.getRadius() - bricks[i] -> picture.getSize().x / 2 - 0.1f, ball.picture.getPosition().y);
+
+             combo++;
+              score = score + combo * 10;
+          }
         }
     }
 
@@ -571,4 +577,44 @@ void loadLevel(int level) {
             }
         }
     }
+}
+bool BallLeft(RectangleShape rect)
+{
+    if (ball.picture.getPosition().x + ball.picture.getRadius() > rect.getPosition().x - rect.getSize().x / 2 &&
+        ball.picture.getPosition().x + ball.picture.getRadius() < rect.getPosition().x + rect.getSize().x / 2 &&
+        ball.picture.getPosition().y + ball.picture.getRadius() >= rect.getPosition().y - rect.getSize().y / 2 &&
+        ball.picture.getPosition().y - ball.picture.getRadius() <= rect.getPosition().y + rect.getSize().y / 2)
+        return true;
+    else
+        return false;
+}
+bool BallRight(RectangleShape rect)
+{
+    if (ball.picture.getPosition().x - ball.picture.getRadius() > rect.getPosition().x - rect.getSize().x / 2 &&
+        ball.picture.getPosition().x - ball.picture.getRadius() < rect.getPosition().x + rect.getSize().x / 2 &&
+        ball.picture.getPosition().y + ball.picture.getRadius() >= rect.getPosition().y - rect.getSize().y / 2 &&
+        ball.picture.getPosition().y - ball.picture.getRadius() <= rect.getPosition().y + rect.getSize().y / 2)
+        return true;
+    else
+        return false;
+}
+bool BallUp(RectangleShape rect)
+{
+    if (ball.picture.getPosition().x + ball.picture.getRadius() >= rect.getPosition().x - rect.getSize().x / 2 &&
+        ball.picture.getPosition().x - ball.picture.getRadius() <= rect.getPosition().x + rect.getSize().x / 2 &&
+        ball.picture.getPosition().y - ball.picture.getRadius() < rect.getPosition().y + rect.getSize().y / 2 &&
+        ball.picture.getPosition().y - ball.picture.getRadius() > rect.getPosition().y - rect.getSize().y / 2)
+        return true;
+    else
+        return false;
+}
+bool BallBottom(RectangleShape rect)
+{
+    if (ball.picture.getPosition().x + ball.picture.getRadius() >= rect.getPosition().x - rect.getSize().x / 2 &&
+        ball.picture.getPosition().x - ball.picture.getRadius() <= rect.getPosition().x + rect.getSize().x / 2 &&
+        ball.picture.getPosition().y + ball.picture.getRadius() < rect.getPosition().y + rect.getSize().y / 2 &&
+        ball.picture.getPosition().y + ball.picture.getRadius() > rect.getPosition().y - rect.getSize().y / 2)
+        return true;
+    else
+        return false;
 }
