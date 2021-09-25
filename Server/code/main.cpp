@@ -176,7 +176,6 @@ void Update(){
             }
         }
 
-        combo = 0;
         ball.setPosition(ball.picture.getPosition().x, paddle.picture.getPosition().y - paddle.picture.getSize().y / 2 - ball.picture.getRadius() - 0.1f);
 
     }
@@ -352,7 +351,6 @@ void HandleInput() {
             life = 3;
             gameOver = false;
             score = 0;
-            combo = 0;
             loadLevel(level);
 
         } else if (win) {
@@ -669,7 +667,7 @@ void Brick::surprise(int surpTemp) {
         paddle.setSize(200,35);
     }else if(surpTemp == 4){
         Ball* balls = new Ball;
-        balls -> ball.initiate();
+        //balls -> ball.initiate();
     }
     else{
     }}
