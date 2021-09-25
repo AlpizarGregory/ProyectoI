@@ -37,7 +37,6 @@ bool win = false;
 int life = 3;
 int level = 0;
 int score = 0;
-int combo = 0;
 
 const float startPosX = 55;
 const float startPosY = 70;
