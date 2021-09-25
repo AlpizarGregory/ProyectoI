@@ -37,6 +37,9 @@ bool win = false;
 int life = 3;
 int level = 0;
 int score = 0;
+int depth = 0;
+int posXTemp;
+int posYTemp;
 
 const float startPosX = 55;
 const float startPosY = 70;
@@ -132,6 +135,7 @@ void Update(){
     if (ball.picture.getPosition().y + ball.picture.getRadius() > frameHeight) {
         playing = false;
         life--;
+        depth = 0;
         Reset();
 
     } else if (ball.picture.getPosition().x - ball.picture.getRadius() < 50.f) {
@@ -175,7 +179,6 @@ void Update(){
             }
         }
 
-        combo = 0;
         ball.setPosition(ball.picture.getPosition().x, paddle.picture.getPosition().y - paddle.picture.getSize().y / 2 - ball.picture.getRadius() - 0.1f);
 
     }
@@ -200,11 +203,16 @@ void Update(){
 
             if (BallUp(bricks[i] -> picture)) {
                 ball.angle = -ball.angle;
+//                posXTemp = ball.picture.getPosition().x;
+//                posYTemp = bricks[i] -> picture.getPosition().y + bricks[i] -> picture.getSize().y / 2 + ball.picture.getRadius() + 0.1f;
                 ball.setPosition(ball.picture.getPosition().x, bricks[i] -> picture.getPosition().y + bricks[i] -> picture.getSize().y / 2 + ball.picture.getRadius() + 0.1f);
+//                ball.setPosition(posXTemp, posYTemp + 23);
                 if (bricks[i]->hit()){
                     (bricks[i]->scoreChange());
                 }
                 else{}
+
+//                ball.setPosition(posXTemp, posYTemp);
                 //combo++;
                 //combo = score + combo * 10;
 
@@ -348,7 +356,6 @@ void HandleInput() {
             life = 3;
             gameOver = false;
             score = 0;
-            combo = 0;
             loadLevel(level);
 
         } else if (win) {
@@ -375,6 +382,7 @@ void HandleInput() {
 void loadLevel(int level) {
     playing = false;
     gameOver = false;
+    depth = 0;
 
     gameOverText.setString("");
 
@@ -451,7 +459,7 @@ void loadLevel(int level) {
             bptr -> setSize(70, 30);
             bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + i*bptr -> picture.getSize().x, startPosY + 11 * bptr -> picture.getSize().y + bptr -> picture.getSize().y / 2);
             bptr -> hp = 99999;
-            bptr -> brickScore = 5;
+            bptr -> brickScore = 4;
             bricks.push_back(bptr);
 
         }
@@ -462,7 +470,7 @@ void loadLevel(int level) {
             bptr -> setSize(70, 30);
             bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + i*bptr -> picture.getSize().x + 6*bptr -> picture.getSize().x, startPosY + 11 * bptr -> picture.getSize().y + bptr -> picture.getSize().y / 2);
             bptr -> hp = 99999;
-            bptr -> brickScore = 5;
+            bptr -> brickScore = 4;
             bricks.push_back(bptr);
 
         }
@@ -537,7 +545,7 @@ void loadLevel(int level) {
             bptr -> setSize(70, 30);
             bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + i*bptr -> picture.getSize().x, startPosY + 11 * bptr -> picture.getSize().y + bptr -> picture.getSize().y / 2);
             bptr -> hp = 99999;
-            bptr -> brickScore = 5;
+            bptr -> brickScore = 4;
             bricks.push_back(bptr);
 
         }
@@ -548,7 +556,7 @@ void loadLevel(int level) {
             bptr -> setSize(70, 30);
             bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + i*bptr -> picture.getSize().x + 6 * bptr -> picture.getSize().x, startPosY + 11 * bptr -> picture.getSize().y + bptr -> picture.getSize().y / 2);
             bptr -> hp = 99999;
-            bptr -> brickScore = 5;
+            bptr -> brickScore = 4;
             bricks.push_back(bptr);
 
         }
@@ -582,7 +590,7 @@ void loadLevel(int level) {
                     bptr -> setSize(70, 30);
                     bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + j* bptr -> picture.getSize().x, startPosY + bptr -> picture.getSize().y / 2 + i*bptr -> picture.getSize().y);
                     bptr -> hp = 99999;
-                    bptr -> brickScore = 99999;
+                    bptr -> brickScore = 4;
                     bricks.push_back(bptr);
 
                 } else if (temp == 3) {
@@ -647,6 +655,12 @@ void Brick::scoreChange() {
         score = score + 15;
     } else if (brickScore == 3) {
         score = score + 20;
+    } else if (brickScore == 4) {
+        if (depth < 3) {
+            cout << depth << endl;
+            depth += 1;
+            cout << depth << endl << endl;
+        }
     } else {
         score = score + 30;
     }

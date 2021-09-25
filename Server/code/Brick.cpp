@@ -19,16 +19,21 @@ void Brick::setPosition(float x, float y)
 }
 bool Brick::hit()
 {
-    hp--;
-    if (hp == 0)
-    {
-        enable = false;
+    if (hp == 99999) {
         return true;
+    } else {
+        hp--;
+        if (hp == 0)
+        {
+            enable = false;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
-    else
-    {
-        return false;
-    }
+
 
 }
 
