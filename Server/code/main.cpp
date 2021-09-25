@@ -38,8 +38,6 @@ int life = 3;
 int level = 0;
 int score = 0;
 
-int totalBricks = 10;
-
 const float startPosX = 55;
 const float startPosY = 70;
 
