@@ -3,6 +3,7 @@
 //
 
 #include "Brick.h"
+
 void Brick::initiate()
 {
     picture.setFillColor(sf::Color::White);
@@ -30,3 +31,4 @@ bool Brick::hit()
     }
 
 }
+

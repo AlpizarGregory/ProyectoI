@@ -203,36 +203,38 @@ void Update(){
                 ball.angle = -ball.angle;
                 ball.setPosition(ball.picture.getPosition().x, bricks[i] -> picture.getPosition().y + bricks[i] -> picture.getSize().y / 2 + ball.picture.getRadius() + 0.1f);
                 if (bricks[i]->hit()){
-
+                    (bricks[i]->scoreChange());
                 }
                 else{}
-                combo++;
-                score = score + combo * 10;
+                //combo++;
+                //combo = score + combo * 10;
 
             } else if (BallBottom(bricks[i] -> picture)) {
                 ball.angle = -ball.angle;
                 ball.setPosition(ball.picture.getPosition().x, bricks[i] -> picture.getPosition().y - bricks[i] -> picture.getSize().y / 2 - ball.picture.getRadius() - 0.1f);
                 if (bricks[i]->hit()) {
+                    (bricks[i]->scoreChange());
                 }
+
                 else{
 
                 }
-                combo++;
-                score = score + combo * 10;
+                //combo++;
+                //score = score + combo * 10;
 
             } else if (BallLeft(bricks[i] -> picture)) {
                 ball.angle = pi - ball.angle;
                 ball.setPosition(bricks[i] -> picture.getPosition().x + ball.picture.getRadius() + bricks[i] -> picture.getSize().x / 2 + 0.1f, ball.picture.getPosition().y);
-
-                combo++;
-                score = score + combo * 10;
+                (bricks[i]->scoreChange());
+                //combo++;
+                //score = score + combo * 10;
 
             } else if (BallRight(bricks[i] -> picture)) {
                 ball.angle = pi - ball.angle;
                 ball.setPosition(bricks[i] -> picture.getPosition().x - ball.picture.getRadius() - bricks[i] -> picture.getSize().x / 2 - 0.1f, ball.picture.getPosition().y);
-
-             combo++;
-              score = score + combo * 10;
+                (bricks[i]->scoreChange());
+                //combo++;
+              //score = score + combo * 10;
           }
         }
     }
@@ -245,7 +247,7 @@ void Update(){
     int count = 0;
 
     for (int i = 0; i < bricks.size(); ++i) {
-        if (bricks[i] -> enable && bricks[i] -> hp < 3)
+        if (bricks[i] -> enable && bricks[i] -> hp < 4)
             count++;
 
     }
@@ -271,13 +273,17 @@ void Render() {
         if (bricks[i]->enable) {
             if (bricks[i]->hp == 1) {
                 bricks[i]->picture.setTexture(&textureBrick);
-                bricks[i]->picture.setFillColor(Color(0, 255, 255, 255));
+                bricks[i]->picture.setFillColor(Color(49, 107, 131, 255));
             } else if (bricks[i]->hp == 2) {
                 bricks[i]->picture.setTexture(&textureBrick);
-                bricks[i]->picture.setFillColor(Color(255, 0, 0, 255));
+                bricks[i]->picture.setFillColor(Color(109, 130, 153, 255));
+            }
+            else if (bricks[i]->hp == 3) {
+                    bricks[i]->picture.setTexture(&textureBrick);
+                    bricks[i]->picture.setFillColor(Color(140, 161, 165, 255));
             } else {
                 bricks[i]->picture.setTexture(&textureBrick);
-                bricks[i]->picture.setFillColor(Color(255, 255, 255, 255));
+                bricks[i]->picture.setFillColor(Color(213, 191, 191, 255));
             }
             window.draw(bricks[i]->picture);
 
@@ -399,6 +405,7 @@ void loadLevel(int level) {
             bptr -> setSize(70, 30);
             bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + i*bptr -> picture.getSize().x, startPosY + bptr -> picture.getSize().y / 2);
             bptr -> hp = 1;
+            bptr -> brickScore = 1;
             bricks.push_back(bptr);
 
         }
@@ -408,7 +415,8 @@ void loadLevel(int level) {
             bptr -> initiate();
             bptr -> setSize(70, 30);
             bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + i*bptr -> picture.getSize().x, startPosY + 3 * bptr -> picture.getSize().y + bptr -> picture.getSize().y / 2);
-            bptr -> hp = 1;
+            bptr -> hp = 2;
+            bptr -> brickScore = 2;
             bricks.push_back(bptr);
 
         }
@@ -419,7 +427,8 @@ void loadLevel(int level) {
                 bptr -> initiate();
                 bptr -> setSize(70, 30);
                 bptr ->setPosition(startPosX + bptr -> picture.getSize().x / 2 + j*bptr -> picture.getSize().x, startPosY + 6 * bptr -> picture.getSize().y + bptr -> picture.getSize().y / 2 + i*bptr -> picture.getSize().y);
-                bptr -> hp = 2;
+                bptr -> hp = 3;
+                bptr -> brickScore = 3;
                 bricks.push_back(bptr);
 
             }
@@ -431,6 +440,7 @@ void loadLevel(int level) {
             bptr -> setSize(70, 30);
             bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + i*bptr->picture.getSize().x, startPosY + 9 * bptr -> picture.getSize().y + bptr -> picture.getSize().y / 2);
             bptr -> hp = 1;
+            bptr -> brickScore = 1;
             bptr -> speed = 400;
             bricks.push_back(bptr);
 
@@ -442,6 +452,7 @@ void loadLevel(int level) {
             bptr -> setSize(70, 30);
             bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + i*bptr -> picture.getSize().x, startPosY + 11 * bptr -> picture.getSize().y + bptr -> picture.getSize().y / 2);
             bptr -> hp = 99999;
+            bptr -> brickScore = 5;
             bricks.push_back(bptr);
 
         }
@@ -452,6 +463,7 @@ void loadLevel(int level) {
             bptr -> setSize(70, 30);
             bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + i*bptr -> picture.getSize().x + 6*bptr -> picture.getSize().x, startPosY + 11 * bptr -> picture.getSize().y + bptr -> picture.getSize().y / 2);
             bptr -> hp = 99999;
+            bptr -> brickScore = 5;
             bricks.push_back(bptr);
 
         }
@@ -464,6 +476,7 @@ void loadLevel(int level) {
             bptr -> setSize(70, 30);
             bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + i*bptr -> picture.getSize().x, startPosY + 10 * bptr -> picture.getSize().y + bptr -> picture.getSize().y / 2 - i*bptr -> picture.getSize().y);
             bptr -> hp = 1;
+            bptr -> brickScore = 1;
             bricks.push_back(bptr);
 
         }
@@ -474,6 +487,7 @@ void loadLevel(int level) {
             bptr -> setSize(70, 30);
             bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + i*bptr -> picture.getSize().x + 5 * bptr -> picture.getSize().x, startPosY + bptr -> picture.getSize().y / 2 + i*bptr -> picture.getSize().y + 6 * bptr -> picture.getSize().y);
             bptr -> hp = 1;
+            bptr -> brickScore = 1;
             bricks.push_back(bptr);
 
         }
@@ -485,6 +499,7 @@ void loadLevel(int level) {
                 bptr -> setSize(70, 30);
                 bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + j*bptr -> picture.getSize().x + 4 * bptr -> picture.getSize().x, startPosY + bptr -> picture.getSize().y / 2 + i*bptr -> picture.getSize().y);
                 bptr -> hp = 2;
+                bptr -> brickScore = 2;
                 bricks.push_back(bptr);
 
             }
@@ -497,6 +512,7 @@ void loadLevel(int level) {
                 bptr -> setSize(70, 30);
                 bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + j*bptr -> picture.getSize().x + 4 * bptr -> picture.getSize().x, startPosY + bptr -> picture.getSize().y / 2 + i*bptr -> picture.getSize().y + 4 * bptr -> picture.getSize().y);
                 bptr -> hp = 2;
+                bptr -> brickScore = 2;
                 bricks.push_back(bptr);
 
             }
@@ -509,6 +525,7 @@ void loadLevel(int level) {
                 bptr -> setSize(70, 30);
                 bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + j*bptr -> picture.getSize().x, startPosY + bptr -> picture.getSize().y / 2 + i*bptr -> picture.getSize().y + 2 * bptr -> picture.getSize().y);
                 bptr -> hp = 1;
+                bptr -> brickScore = 1;
                 bptr -> speed = 300;
                 bricks.push_back(bptr);
 
@@ -521,6 +538,7 @@ void loadLevel(int level) {
             bptr -> setSize(70, 30);
             bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + i*bptr -> picture.getSize().x, startPosY + 11 * bptr -> picture.getSize().y + bptr -> picture.getSize().y / 2);
             bptr -> hp = 99999;
+            bptr -> brickScore = 5;
             bricks.push_back(bptr);
 
         }
@@ -531,6 +549,7 @@ void loadLevel(int level) {
             bptr -> setSize(70, 30);
             bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + i*bptr -> picture.getSize().x + 6 * bptr -> picture.getSize().x, startPosY + 11 * bptr -> picture.getSize().y + bptr -> picture.getSize().y / 2);
             bptr -> hp = 99999;
+            bptr -> brickScore = 5;
             bricks.push_back(bptr);
 
         }
@@ -546,6 +565,7 @@ void loadLevel(int level) {
                     bptr -> setSize(70, 30);
                     bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + j* bptr -> picture.getSize().x, startPosY + bptr -> picture.getSize().y / 2 + i*bptr -> picture.getSize().y);
                     bptr -> hp = 1;
+                    bptr -> brickScore = 1;
                     bricks.push_back(bptr);
 
                 } else if (temp == 1) {
@@ -554,6 +574,7 @@ void loadLevel(int level) {
                     bptr -> setSize(70, 30);
                     bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + j* bptr -> picture.getSize().x, startPosY + bptr -> picture.getSize().y / 2 + i*bptr -> picture.getSize().y);
                     bptr -> hp = 2;
+                    bptr -> brickScore = 2;
                     bricks.push_back(bptr);
 
                 } else if (temp == 2) {
@@ -562,6 +583,7 @@ void loadLevel(int level) {
                     bptr -> setSize(70, 30);
                     bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + j* bptr -> picture.getSize().x, startPosY + bptr -> picture.getSize().y / 2 + i*bptr -> picture.getSize().y);
                     bptr -> hp = 99999;
+                    bptr -> brickScore = 99999;
                     bricks.push_back(bptr);
 
                 } else if (temp == 3) {
@@ -570,6 +592,7 @@ void loadLevel(int level) {
                     bptr -> setSize(70, 30);
                     bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + j* bptr -> picture.getSize().x, startPosY + bptr -> picture.getSize().y / 2 + i*bptr -> picture.getSize().y);
                     bptr -> hp = 1;
+                    bptr -> brickScore = 1;
                     bptr -> speed = 300;
                     bricks.push_back(bptr);
 
@@ -617,4 +640,15 @@ bool BallBottom(RectangleShape rect)
         return true;
     else
         return false;
+}
+void Brick::scoreChange() {
+    if (brickScore == 1) {
+        score = score + 10;
+    } else if (brickScore == 2) {
+        score = score + 15;
+    } else if (brickScore == 3) {
+        score = score + 20;
+    } else {
+        score = score + 30;
+    }
 }
