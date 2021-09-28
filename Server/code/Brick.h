@@ -18,6 +18,8 @@ public:
     void setPosition(float x, float y);
     virtual bool hit();
     void scoreChange();
+    void surprise(int surpTemp);
+
 };
 
 #endif

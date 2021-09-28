@@ -38,8 +38,6 @@ int life = 3;
 int level = 0;
 int score = 0;
 int depth = 0;
-int posXTemp;
-int posYTemp;
 
 const float startPosX = 55;
 const float startPosY = 70;
@@ -54,6 +52,7 @@ Texture texturePaddle;
 Texture textureBrick;
 
 vector<Brick*> bricks;
+vector<Ball*> balls;
 
 void Initiate();
 void Reset();
@@ -203,45 +202,43 @@ void Update(){
 
             if (BallUp(bricks[i] -> picture)) {
                 ball.angle = -ball.angle;
-//                posXTemp = ball.picture.getPosition().x;
-//                posYTemp = bricks[i] -> picture.getPosition().y + bricks[i] -> picture.getSize().y / 2 + ball.picture.getRadius() + 0.1f;
                 ball.setPosition(ball.picture.getPosition().x, bricks[i] -> picture.getPosition().y + bricks[i] -> picture.getSize().y / 2 + ball.picture.getRadius() + 0.1f);
-//                ball.setPosition(posXTemp, posYTemp + 23);
                 if (bricks[i]->hit()){
+                    int surpTemp = rand() % 6;
                     (bricks[i]->scoreChange());
+                    (bricks[i]->surprise(surpTemp));
                 }
                 else{}
 
-//                ball.setPosition(posXTemp, posYTemp);
-                //combo++;
-                //combo = score + combo * 10;
 
             } else if (BallBottom(bricks[i] -> picture)) {
                 ball.angle = -ball.angle;
                 ball.setPosition(ball.picture.getPosition().x, bricks[i] -> picture.getPosition().y - bricks[i] -> picture.getSize().y / 2 - ball.picture.getRadius() - 0.1f);
                 if (bricks[i]->hit()) {
+                    int surpTemp = rand() % 6;
                     (bricks[i]->scoreChange());
+                    (bricks[i]->surprise(surpTemp));
                 }
 
                 else{
 
                 }
-                //combo++;
-                //score = score + combo * 10;
+
 
             } else if (BallLeft(bricks[i] -> picture)) {
                 ball.angle = pi - ball.angle;
                 ball.setPosition(bricks[i] -> picture.getPosition().x + ball.picture.getRadius() + bricks[i] -> picture.getSize().x / 2 + 0.1f, ball.picture.getPosition().y);
+                int surpTemp = rand() % 8;
                 (bricks[i]->scoreChange());
-                //combo++;
-                //score = score + combo * 10;
+                (bricks[i]->surprise(surpTemp));
+
 
             } else if (BallRight(bricks[i] -> picture)) {
                 ball.angle = pi - ball.angle;
                 ball.setPosition(bricks[i] -> picture.getPosition().x - ball.picture.getRadius() - bricks[i] -> picture.getSize().x / 2 - 0.1f, ball.picture.getPosition().y);
+                int surpTemp = rand() % 8;
                 (bricks[i]->scoreChange());
-                //combo++;
-              //score = score + combo * 10;
+                (bricks[i]->surprise(surpTemp));
           }
         }
     }
@@ -665,3 +662,22 @@ void Brick::scoreChange() {
         score = score + 30;
     }
 }
+
+void Brick::surprise(int surpTemp) {
+    if (surpTemp == 0) {
+        ball.speed = 350;
+    }
+    else if (surpTemp == 1){
+        ball.speed = 650;
+    }
+    else if (surpTemp == 2){
+        paddle.setSize(100,35);
+    }
+    else if(surpTemp == 3){
+        paddle.setSize(200,35);
+    }else if(surpTemp == 4){
+        Ball* balls = new Ball;
+//        balls -> ball.initiate();
+    }
+    else{
+    }}
