@@ -7,6 +7,7 @@
 #include "Paddle.h"
 #include "Ball.h"
 #include "Brick.h"
+#include "breakout.h"
 
 using namespace sf;
 using namespace std;
@@ -37,7 +38,6 @@ bool win = false;
 int life = 3;
 int level = 0;
 int score = 0;
-int depth = 0;
 
 const float startPosX = 55;
 const float startPosY = 70;
@@ -68,7 +68,9 @@ bool BallBottom(RectangleShape rect);
 
 // Fin de variables
 
-int main() {
+breakout::breakout(const string &name) : name(name) {}
+
+int breakout::start() {
 
     window.create(VideoMode(frameWidth,frameHeight), "Breakout");
     Initiate();
@@ -134,7 +136,6 @@ void Update(){
     if (ball.picture.getPosition().y + ball.picture.getRadius() > frameHeight) {
         playing = false;
         life--;
-        depth = 0;
         Reset();
 
     } else if (ball.picture.getPosition().x - ball.picture.getRadius() < 50.f) {
@@ -207,6 +208,7 @@ void Update(){
                     int surpTemp = rand() % 6;
                     (bricks[i]->scoreChange());
                     (bricks[i]->surprise(surpTemp));
+                    cout << "Hit" << endl;
                 }
                 else{}
 
@@ -218,6 +220,7 @@ void Update(){
                     int surpTemp = rand() % 6;
                     (bricks[i]->scoreChange());
                     (bricks[i]->surprise(surpTemp));
+                    cout << "Hit" << endl;
                 }
 
                 else{
@@ -379,7 +382,6 @@ void HandleInput() {
 void loadLevel(int level) {
     playing = false;
     gameOver = false;
-    depth = 0;
 
     gameOverText.setString("");
 
@@ -596,6 +598,7 @@ void loadLevel(int level) {
                     bptr -> setSize(70, 30);
                     bptr -> setPosition(startPosX + bptr -> picture.getSize().x / 2 + j* bptr -> picture.getSize().x, startPosY + bptr -> picture.getSize().y / 2 + i*bptr -> picture.getSize().y);
                     bptr -> hp = 1;
+
                     bptr -> brickScore = 1;
                     bptr -> speed = 300;
                     bricks.push_back(bptr);
@@ -608,9 +611,9 @@ void loadLevel(int level) {
 bool BallLeft(RectangleShape rect)
 {
     if (ball.picture.getPosition().x + ball.picture.getRadius() > rect.getPosition().x - rect.getSize().x / 2 &&
-        ball.picture.getPosition().x + ball.picture.getRadius() < rect.getPosition().x + rect.getSize().x / 2 &&
-        ball.picture.getPosition().y + ball.picture.getRadius() >= rect.getPosition().y - rect.getSize().y / 2 &&
-        ball.picture.getPosition().y - ball.picture.getRadius() <= rect.getPosition().y + rect.getSize().y / 2)
+            ball.picture.getPosition().x + ball.picture.getRadius() < rect.getPosition().x + rect.getSize().x / 2 &&
+            ball.picture.getPosition().y + ball.picture.getRadius() >= rect.getPosition().y - rect.getSize().y / 2 &&
+            ball.picture.getPosition().y - ball.picture.getRadius() <= rect.getPosition().y + rect.getSize().y / 2)
         return true;
     else
         return false;
@@ -618,9 +621,9 @@ bool BallLeft(RectangleShape rect)
 bool BallRight(RectangleShape rect)
 {
     if (ball.picture.getPosition().x - ball.picture.getRadius() > rect.getPosition().x - rect.getSize().x / 2 &&
-        ball.picture.getPosition().x - ball.picture.getRadius() < rect.getPosition().x + rect.getSize().x / 2 &&
-        ball.picture.getPosition().y + ball.picture.getRadius() >= rect.getPosition().y - rect.getSize().y / 2 &&
-        ball.picture.getPosition().y - ball.picture.getRadius() <= rect.getPosition().y + rect.getSize().y / 2)
+            ball.picture.getPosition().x - ball.picture.getRadius() < rect.getPosition().x + rect.getSize().x / 2 &&
+            ball.picture.getPosition().y + ball.picture.getRadius() >= rect.getPosition().y - rect.getSize().y / 2 &&
+            ball.picture.getPosition().y - ball.picture.getRadius() <= rect.getPosition().y + rect.getSize().y / 2)
         return true;
     else
         return false;
@@ -628,9 +631,9 @@ bool BallRight(RectangleShape rect)
 bool BallUp(RectangleShape rect)
 {
     if (ball.picture.getPosition().x + ball.picture.getRadius() >= rect.getPosition().x - rect.getSize().x / 2 &&
-        ball.picture.getPosition().x - ball.picture.getRadius() <= rect.getPosition().x + rect.getSize().x / 2 &&
-        ball.picture.getPosition().y - ball.picture.getRadius() < rect.getPosition().y + rect.getSize().y / 2 &&
-        ball.picture.getPosition().y - ball.picture.getRadius() > rect.getPosition().y - rect.getSize().y / 2)
+            ball.picture.getPosition().x - ball.picture.getRadius() <= rect.getPosition().x + rect.getSize().x / 2 &&
+            ball.picture.getPosition().y - ball.picture.getRadius() < rect.getPosition().y + rect.getSize().y / 2 &&
+            ball.picture.getPosition().y - ball.picture.getRadius() > rect.getPosition().y - rect.getSize().y / 2)
         return true;
     else
         return false;
@@ -638,13 +641,15 @@ bool BallUp(RectangleShape rect)
 bool BallBottom(RectangleShape rect)
 {
     if (ball.picture.getPosition().x + ball.picture.getRadius() >= rect.getPosition().x - rect.getSize().x / 2 &&
-        ball.picture.getPosition().x - ball.picture.getRadius() <= rect.getPosition().x + rect.getSize().x / 2 &&
-        ball.picture.getPosition().y + ball.picture.getRadius() < rect.getPosition().y + rect.getSize().y / 2 &&
-        ball.picture.getPosition().y + ball.picture.getRadius() > rect.getPosition().y - rect.getSize().y / 2)
+            ball.picture.getPosition().x - ball.picture.getRadius() <= rect.getPosition().x + rect.getSize().x / 2 &&
+            ball.picture.getPosition().y + ball.picture.getRadius() < rect.getPosition().y + rect.getSize().y / 2 &&
+            ball.picture.getPosition().y + ball.picture.getRadius() > rect.getPosition().y - rect.getSize().y / 2)
         return true;
     else
         return false;
 }
+
+
 void Brick::scoreChange() {
     if (brickScore == 1) {
         score = score + 10;
@@ -652,12 +657,6 @@ void Brick::scoreChange() {
         score = score + 15;
     } else if (brickScore == 3) {
         score = score + 20;
-    } else if (brickScore == 4) {
-        if (depth < 3) {
-            cout << depth << endl;
-            depth += 1;
-            cout << depth << endl << endl;
-        }
     } else {
         score = score + 30;
     }
@@ -680,4 +679,5 @@ void Brick::surprise(int surpTemp) {
 //        balls -> ball.initiate();
     }
     else{
+
     }}

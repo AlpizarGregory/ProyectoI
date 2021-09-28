@@ -1,4 +1,4 @@
-/snap/clion/163/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" "/home/alpizargregory/Documentos/Datos II/ProyectoI/Client"
+/snap/clion/164/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" "/home/alpizargregory/Documentos/Datos II/ProyectoI/Client"
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/alpizargregory/Documentos/Datos II/ProyectoI/Client/cmake-build-debug

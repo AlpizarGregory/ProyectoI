@@ -7,6 +7,8 @@
 #include <string.h>
 #include <string>
 
+std::string positions[] = {"23","5","8","9"};
+
 using namespace std;
 
 int main() {
@@ -35,13 +37,15 @@ int main() {
 
     // While loop:
     char buf [4096];
+    int index = 0;
     string userInput;
 
     do {
 
         // Enter lines of text
-        cout << "> ";
-        getline(cin, userInput);
+//        cout << "> ";
+//        getline(cin, userInput);
+        userInput = positions[index];
 
         // Send to server
 
@@ -61,8 +65,9 @@ int main() {
             // Display response
             cout << "SERVER> " << string(buf, bytesReceived) << "\r\n";
         }
+        index ++;
 
-    } while (true);
+    } while (index < 4);
 
     // CLose the socket
     close(sock);
