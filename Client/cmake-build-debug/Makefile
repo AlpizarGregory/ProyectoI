@@ -129,6 +129,102 @@ Client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/build
 .PHONY : Client/fast
 
+code/Ball.o: code/Ball.cpp.o
+.PHONY : code/Ball.o
+
+# target to build an object file
+code/Ball.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/Ball.cpp.o
+.PHONY : code/Ball.cpp.o
+
+code/Ball.i: code/Ball.cpp.i
+.PHONY : code/Ball.i
+
+# target to preprocess a source file
+code/Ball.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/Ball.cpp.i
+.PHONY : code/Ball.cpp.i
+
+code/Ball.s: code/Ball.cpp.s
+.PHONY : code/Ball.s
+
+# target to generate assembly for a file
+code/Ball.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/Ball.cpp.s
+.PHONY : code/Ball.cpp.s
+
+code/Brick.o: code/Brick.cpp.o
+.PHONY : code/Brick.o
+
+# target to build an object file
+code/Brick.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/Brick.cpp.o
+.PHONY : code/Brick.cpp.o
+
+code/Brick.i: code/Brick.cpp.i
+.PHONY : code/Brick.i
+
+# target to preprocess a source file
+code/Brick.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/Brick.cpp.i
+.PHONY : code/Brick.cpp.i
+
+code/Brick.s: code/Brick.cpp.s
+.PHONY : code/Brick.s
+
+# target to generate assembly for a file
+code/Brick.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/Brick.cpp.s
+.PHONY : code/Brick.cpp.s
+
+code/Paddle.o: code/Paddle.cpp.o
+.PHONY : code/Paddle.o
+
+# target to build an object file
+code/Paddle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/Paddle.cpp.o
+.PHONY : code/Paddle.cpp.o
+
+code/Paddle.i: code/Paddle.cpp.i
+.PHONY : code/Paddle.i
+
+# target to preprocess a source file
+code/Paddle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/Paddle.cpp.i
+.PHONY : code/Paddle.cpp.i
+
+code/Paddle.s: code/Paddle.cpp.s
+.PHONY : code/Paddle.s
+
+# target to generate assembly for a file
+code/Paddle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/Paddle.cpp.s
+.PHONY : code/Paddle.cpp.s
+
+code/breakout.o: code/breakout.cpp.o
+.PHONY : code/breakout.o
+
+# target to build an object file
+code/breakout.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/breakout.cpp.o
+.PHONY : code/breakout.cpp.o
+
+code/breakout.i: code/breakout.cpp.i
+.PHONY : code/breakout.i
+
+# target to preprocess a source file
+code/breakout.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/breakout.cpp.i
+.PHONY : code/breakout.cpp.i
+
+code/breakout.s: code/breakout.cpp.s
+.PHONY : code/breakout.s
+
+# target to generate assembly for a file
+code/breakout.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/code/breakout.cpp.s
+.PHONY : code/breakout.cpp.s
+
 code/tcpClient.o: code/tcpClient.cpp.o
 .PHONY : code/tcpClient.o
 
@@ -162,6 +258,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Client"
+	@echo "... code/Ball.o"
+	@echo "... code/Ball.i"
+	@echo "... code/Ball.s"
+	@echo "... code/Brick.o"
+	@echo "... code/Brick.i"
+	@echo "... code/Brick.s"
+	@echo "... code/Paddle.o"
+	@echo "... code/Paddle.i"
+	@echo "... code/Paddle.s"
+	@echo "... code/breakout.o"
+	@echo "... code/breakout.i"
+	@echo "... code/breakout.s"
 	@echo "... code/tcpClient.o"
 	@echo "... code/tcpClient.i"
 	@echo "... code/tcpClient.s"

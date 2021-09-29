@@ -6,12 +6,15 @@
 #include <arpa/inet.h>
 #include <string.h>
 #include <string>
-
-std::string positions[] = {"23","5","8","9"};
+#include "breakout.h"
 
 using namespace std;
 
 int main() {
+
+    breakout game("Player");
+    game.start();
+
     // Create a socket
     int sock = socket(AF_INET, SOCK_STREAM, 0);
 
@@ -37,7 +40,6 @@ int main() {
 
     // While loop:
     char buf [4096];
-    int index = 0;
     string userInput;
 
     do {
@@ -45,7 +47,7 @@ int main() {
         // Enter lines of text
 //        cout << "> ";
 //        getline(cin, userInput);
-        userInput = positions[index];
+        userInput = to_string(25.0);
 
         // Send to server
 
@@ -65,9 +67,8 @@ int main() {
             // Display response
             cout << "SERVER> " << string(buf, bytesReceived) << "\r\n";
         }
-        index ++;
 
-    } while (index < 4);
+    } while (true);
 
     // CLose the socket
     close(sock);

@@ -5,7 +5,7 @@
 		<Option title="Client"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/cmake-build-debug"/>
@@ -44,6 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/SFML_INCLUDE_DIR"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -66,6 +67,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/SFML_INCLUDE_DIR"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -82,11 +84,50 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Ball.cpp">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Ball.h">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Brick.cpp">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Brick.h">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Paddle.cpp">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Paddle.h">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/breakout.cpp">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/breakout.h">
+			<Option target="Client"/>
+		</Unit>
 		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/tcpClient.cpp">
 			<Option target="Client"/>
 		</Unit>
 		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

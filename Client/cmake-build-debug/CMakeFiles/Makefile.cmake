@@ -31,6 +31,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/snap/clion/164/bin/cmake/linux/share/cmake-3.20/Modules/Platform/Linux.cmake"
   "/snap/clion/164/bin/cmake/linux/share/cmake-3.20/Modules/Platform/UnixPaths.cmake"
   "/snap/clion/164/bin/cmake/linux/share/cmake-3.20/Modules/ProcessorCount.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake"
   )
 
 # The corresponding makefile is:
