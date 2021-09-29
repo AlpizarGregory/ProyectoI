@@ -6,11 +6,9 @@ public:
     std::string name;
 
     breakout(const std::string &name);
+    float getXMousePos();
 
     int start();
-
-
-
 
 };
 #endif

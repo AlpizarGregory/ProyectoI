@@ -11,6 +11,9 @@ CMakeFiles/Client.dir/code/Paddle.cpp.o
  /home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Paddle.cpp
  /home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Paddle.h
 CMakeFiles/Client.dir/code/breakout.cpp.o
+ /home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Ball.h
+ /home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Brick.h
+ /home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Paddle.h
  /home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/breakout.cpp
  /home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/breakout.h
 CMakeFiles/Client.dir/code/tcpClient.cpp.o

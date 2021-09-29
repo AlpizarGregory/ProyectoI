@@ -19,6 +19,14 @@ Text gameOverText;
 Text lifeText;
 Text scoreText;
 
+//Variables de socket
+#include <unistd.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <string>
+#include <string.h>
+#include "breakout.h"
+
 // Variables no fijas
 #include <vector>
 #include <cstdlib>
@@ -38,6 +46,7 @@ bool win = false;
 int life = 3;
 int level = 0;
 int score = 0;
+int xMousePos = 55;
 
 const float startPosX = 55;
 const float startPosY = 70;
@@ -68,9 +77,37 @@ bool BallBottom(RectangleShape rect);
 
 // Fin de variables
 
-breakout::breakout(const string &name) : name(name) {}
+breakout::breakout(const string &name) : name(name) {
+}
 
-int breakout::start() {
+int main() {
+
+    //Create socket
+    int sock = socket(AF_INET, SOCK_STREAM, 0);
+
+    if (sock == -1) {
+        return 1;
+    }
+
+    // Create a hint structure for the server that's connecting with
+    int port = 54000;
+    string ipAddress = "127.0.0.1";
+
+    sockaddr_in hint;
+    hint.sin_family = AF_INET;
+    hint.sin_port = htons(port);
+    inet_pton(AF_INET, ipAddress.c_str(), &hint.sin_addr);
+
+    // Connect to the server on socket
+    int connectRes = connect(sock, (sockaddr*)&hint, sizeof(hint));
+
+    if (connectRes == -1) {
+        return 1;
+    }
+
+    // While loop
+    char buf [4096];
+    string userInput;
 
     window.create(VideoMode(frameWidth,frameHeight), "Breakout");
     Initiate();
@@ -79,13 +116,36 @@ int breakout::start() {
     while (window.isOpen()) {
         deltaTime = gameClock.restart().asSeconds();
         HandleInput();
+        userInput = to_string(xMousePos);
+
+        int sendRes = send(sock, userInput.c_str(), userInput.size() + 1, 0);
+        if (sendRes == -1) {
+            cout << "Could not send to server\r\n";
+            continue;
+        }
+
+        // Wait for response
+        memset(buf, 0, 4096);
+        int bytesReceived = recv(sock, buf, 4096, 0);
+        if (bytesReceived == -1) {
+            cout << "There was an error getting response from server\r\n";
+
+        } else {
+            // Display message
+            cout << "SERVER> " << string(buf, bytesReceived) << "\r\n";
+
+        }
 
         if (playing&&!gameOver&&!win) {
             Update();
         }
 
         Render();
+
     }
+
+    // Close the socket
+    close(sock);
 
     return EXIT_SUCCESS;
 }
@@ -117,6 +177,7 @@ void Initiate() {
     scoreText.setPosition(80, frameHeight - 30);
     scoreText.setString("score:"+ std::to_string(score));
 }
+
 void Reset(){
     ball.setPosition(paddle.picture.getPosition().x, paddle.picture.getPosition().y - paddle.picture.getSize().y / 2 - ball.picture.getRadius());
     ball.angle = (270 + std::rand() % 60 - 30) * 2 * pi / 360;
@@ -208,7 +269,6 @@ void Update(){
                     int surpTemp = rand() % 6;
                     (bricks[i]->scoreChange());
                     (bricks[i]->surprise(surpTemp));
-                    cout << "Hit" << endl;
                 }
                 else{}
 
@@ -220,7 +280,6 @@ void Update(){
                     int surpTemp = rand() % 6;
                     (bricks[i]->scoreChange());
                     (bricks[i]->surprise(surpTemp));
-                    cout << "Hit" << endl;
                 }
 
                 else{
@@ -320,6 +379,7 @@ void HandleInput() {
             bricks.clear();
 
         } else if (event.type == Event::MouseMoved && !gameOver && !win) {
+            xMousePos = Mouse::getPosition(window).x;
             if (Mouse::getPosition(window).x < (frameWidth - 100.f) && Mouse::getPosition(window).x > 100.f) {
                 paddle.picture.setPosition(Vector2f(event.mouseMove.x, paddle.picture.getPosition().y));
 

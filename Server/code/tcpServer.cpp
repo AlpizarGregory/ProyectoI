@@ -12,8 +12,8 @@ using namespace std;
 
 int main() {
 
-    breakout game("Player");
-    game.start();
+//    breakout game("Player");
+//    game.start();
 
     // Create socket
     int listening = socket(AF_INET, SOCK_STREAM, 0);
@@ -85,11 +85,10 @@ int main() {
             break;
         }
 
-        int xPos = std::stoi(string(buf, 0, bytesRecv)) - 2;
+        int xPos = std::stoi(string(buf, 0, bytesRecv)) ;
 
         // Display message
         cout << "Received: " << string(buf, 0, bytesRecv) << endl;
-        cout << xPos << endl;
 
         // Resend message
         send(clientSocket, buf, bytesRecv + 1, 0);

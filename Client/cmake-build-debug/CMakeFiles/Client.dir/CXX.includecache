@@ -6,27 +6,53 @@
 
 #IncludeRegexTransform: 
 
-/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Ball.cpp
-Ball.h
-/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Ball.h
-
 /home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Ball.h
 SFML/Graphics.hpp
 -
-
-/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Brick.cpp
-Brick.h
-/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Brick.h
 
 /home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Brick.h
 SFML/Graphics.hpp
 -
 
-/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Paddle.cpp
+/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Paddle.h
+SFML/Graphics.hpp
+-
+
+/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/breakout.cpp
+SFML/Window.hpp
+-
+SFML/Graphics.hpp
+-
+time.h
+-
+iostream
+-
+math.h
+-
 Paddle.h
 /home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Paddle.h
-
-/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Paddle.h
-SFML/Graphics.hpp
+Ball.h
+/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Ball.h
+Brick.h
+/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Brick.h
+breakout.h
+/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/breakout.h
+unistd.h
 -
+sys/socket.h
+-
+arpa/inet.h
+-
+string
+-
+string.h
+-
+breakout.h
+/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/breakout.h
+vector
+-
+cstdlib
+-
+
+/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/breakout.h
 
