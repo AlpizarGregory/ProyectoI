@@ -14,8 +14,6 @@ CMakeFiles/Client.dir/code/breakout.cpp.o: \
  ../code/Ball.h \
  ../code/Brick.h \
  ../code/Paddle.h \
- ../code/breakout.cpp \
- ../code/breakout.h
+ ../code/breakout.cpp
 CMakeFiles/Client.dir/code/tcpClient.cpp.o: \
- ../code/breakout.h \
  ../code/tcpClient.cpp

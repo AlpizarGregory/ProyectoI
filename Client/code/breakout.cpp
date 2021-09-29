@@ -7,7 +7,6 @@
 #include "Paddle.h"
 #include "Ball.h"
 #include "Brick.h"
-#include "breakout.h"
 
 using namespace sf;
 using namespace std;
@@ -25,7 +24,6 @@ Text scoreText;
 #include <arpa/inet.h>
 #include <string>
 #include <string.h>
-#include "breakout.h"
 
 // Variables no fijas
 #include <vector>
@@ -76,9 +74,6 @@ bool BallUp(RectangleShape rect);
 bool BallBottom(RectangleShape rect);
 
 // Fin de variables
-
-breakout::breakout(const string &name) : name(name) {
-}
 
 int main() {
 

@@ -35,8 +35,6 @@ Ball.h
 /home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Ball.h
 Brick.h
 /home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Brick.h
-breakout.h
-/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/breakout.h
 unistd.h
 -
 sys/socket.h
@@ -47,12 +45,10 @@ string
 -
 string.h
 -
-breakout.h
-/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/breakout.h
 vector
 -
 cstdlib
 -
 
-/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/breakout.h
+/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/tcpClient.cpp
 
