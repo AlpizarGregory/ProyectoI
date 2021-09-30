@@ -1,4 +1,4 @@
-# Install script for directory: /home/alpizargregory/Documentos/Datos II/ProyectoI/Client
+# Install script for directory: /home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

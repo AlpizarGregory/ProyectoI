@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Ball.cpp" "/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/cmake-build-debug/CMakeFiles/Client.dir/code/Ball.cpp.o"
-  "/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Brick.cpp" "/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/cmake-build-debug/CMakeFiles/Client.dir/code/Brick.cpp.o"
-  "/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/Paddle.cpp" "/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/cmake-build-debug/CMakeFiles/Client.dir/code/Paddle.cpp.o"
-  "/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/breakout.cpp" "/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/cmake-build-debug/CMakeFiles/Client.dir/code/breakout.cpp.o"
-  "/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/code/tcpClient.cpp" "/home/alpizargregory/Documentos/Datos II/ProyectoI/Client/cmake-build-debug/CMakeFiles/Client.dir/code/tcpClient.cpp.o"
+  "/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/Ball.cpp" "/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/CMakeFiles/Client.dir/code/Ball.cpp.o"
+  "/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/Brick.cpp" "/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/CMakeFiles/Client.dir/code/Brick.cpp.o"
+  "/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/Paddle.cpp" "/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/CMakeFiles/Client.dir/code/Paddle.cpp.o"
+  "/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/breakout.cpp" "/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/CMakeFiles/Client.dir/code/breakout.cpp.o"
+  "/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/tcpClient.cpp" "/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/CMakeFiles/Client.dir/code/tcpClient.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -127,7 +127,7 @@ int main() {
 
         } else {
             // Display message
-            cout << "SERVER> " << string(buf, bytesReceived) << "\r\n";
+            //cout << "SERVER> " << string(buf, bytesReceived) << "\r\n";
 
         }
 
