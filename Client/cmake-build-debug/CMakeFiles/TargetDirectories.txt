@@ -1,3 +1,3 @@
-/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/CMakeFiles/Client.dir
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/cmake-build-debug/CMakeFiles/Client.dir

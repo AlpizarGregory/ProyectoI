@@ -5,46 +5,46 @@
 		<Option title="Client"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug"/>
+				<Option working_dir="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug"/>
+				<Option working_dir="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug"/>
+				<Option working_dir="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Client">
-				<Option output="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Client" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug"/>
+				<Option output="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/cmake-build-debug/Client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/SFML_INCLUDE_DIR"/>
+					<Add directory="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/SFML_INCLUDE_DIR"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -54,20 +54,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Client"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Client"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Client/fast">
-				<Option output="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Client" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug"/>
+				<Option output="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/cmake-build-debug/Client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/SFML_INCLUDE_DIR"/>
+					<Add directory="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/SFML_INCLUDE_DIR"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -77,54 +77,54 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Client/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Client/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/alpizargregory/Documentos/Datos\ II/\ Proyecto\ I/ProyectoI-DatosII/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/Ball.cpp">
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Ball.cpp">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/Ball.h">
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Ball.h">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/Brick.cpp">
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Brick.cpp">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/Brick.h">
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Brick.h">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/Paddle.cpp">
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Paddle.cpp">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/Paddle.h">
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Paddle.h">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/breakout.cpp">
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/breakout.cpp">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/tcpClient.cpp">
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/tcpClient.cpp">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/CMakeLists.txt">
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		<Unit filename="/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/../../../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

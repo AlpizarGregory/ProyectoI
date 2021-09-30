@@ -63,7 +63,7 @@ void Initiate();
 void Reset();
 void Update();
 void Render();
-void HandleInput();
+void HandleInput(int xPos);
 void loadLevel(int level);
 
 bool BallLeft(RectangleShape rect);
@@ -131,7 +131,7 @@ int main() {
 
     char buf[4096];
 
-    while (window.isOpen()) {
+    while (true) {
         // Clear the buffer
         memset(buf, 0, 4096);
 
@@ -149,14 +149,15 @@ int main() {
         int xPos = std::stoi(string(buf, 0, bytesRecv)) ;
 
         deltaTime = gameClock.restart().asSeconds();
-        HandleInput();
+        HandleInput(xPos);
+//        cout << xPos << endl;
 
         if (playing&&!gameOver&&!win) {
             Update();
-
-            // Resend message
-            send(clientSocket, buf, bytesRecv + 1, 0);
         }
+
+        // Resend message
+        send(clientSocket, buf, bytesRecv + 1, 0);
 
         Render();
     }
@@ -378,8 +379,15 @@ void Render() {
 
 }
 
-void HandleInput() {
+void HandleInput(int xPos) {
     Event event;
+
+    if (!gameOver && !win) {
+        if (xPos < (frameWidth - 100.f) && xPos > 100.f) {
+            cout << "Adentro" << endl;
+            paddle.picture.setPosition(Vector2f(xPos, paddle.picture.getPosition().y));
+        }
+    }
 
     while (window.pollEvent(event)) {
         if(event.type == Event::Closed) {
@@ -393,10 +401,11 @@ void HandleInput() {
 
             bricks.clear();
 
-        } else if (event.type == Event::MouseMoved && !gameOver && !win) {
-            if (Mouse::getPosition(window).x < (frameWidth - 100.f) && Mouse::getPosition(window).x > 100.f) {
-                paddle.picture.setPosition(Vector2f(event.mouseMove.x, paddle.picture.getPosition().y));
-
+        } else if (!gameOver && !win) {
+//            cout << "Afuera" << endl;
+            if (xPos < (frameWidth - 100.f) && xPos > 100.f) {
+//                cout << "Adentro" << endl;
+                paddle.picture.setPosition(Vector2f(xPos, paddle.picture.getPosition().y));
             }
             if (!playing) {
                 ball.picture.setPosition(paddle.picture.getPosition().x, paddle.picture.getPosition().y - paddle.picture.getSize().y / 2 - ball.picture.getRadius());

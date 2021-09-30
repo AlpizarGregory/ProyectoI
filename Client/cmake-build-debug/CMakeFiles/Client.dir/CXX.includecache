@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/Ball.h
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Ball.h
 SFML/Graphics.hpp
 -
 
-/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/Brick.h
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Brick.h
 SFML/Graphics.hpp
 -
 
-/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/Paddle.h
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Paddle.h
 SFML/Graphics.hpp
 -
 
-/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/breakout.cpp
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/breakout.cpp
 SFML/Window.hpp
 -
 SFML/Graphics.hpp
@@ -30,11 +30,11 @@ iostream
 math.h
 -
 Paddle.h
-/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/Paddle.h
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Paddle.h
 Ball.h
-/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/Ball.h
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Ball.h
 Brick.h
-/home/axel/Desktop/Proyecto1Datos2/ProyectoI-DatosII/Client/code/Brick.h
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Brick.h
 unistd.h
 -
 sys/socket.h

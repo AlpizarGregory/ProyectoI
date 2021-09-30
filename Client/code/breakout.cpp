@@ -105,6 +105,7 @@ int main() {
     string userInput;
 
     window.create(VideoMode(frameWidth,frameHeight), "Breakout");
+    window.setPosition(Vector2i(950,-200));
     Initiate();
     loadLevel(0);
 
@@ -127,7 +128,7 @@ int main() {
 
         } else {
             // Display message
-            //cout << "SERVER> " << string(buf, bytesReceived) << "\r\n";
+            cout << "SERVER> " << string(buf, bytesReceived) << "\r\n";
 
         }
 
