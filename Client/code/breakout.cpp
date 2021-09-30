@@ -157,14 +157,11 @@ int main() {
 void setGame() {
     int index = 0;
     string bytes = "";
-//    cout << data << endl;
     for (auto x : data) {
         if (x == ',') {
             if (index == 0) {
-//                cout << bytes << endl;
                 xBallPos = std::stof(bytes);
             } else if (index == 1) {
-//                cout << bytes << endl;
                 yBallPos = std::stof(bytes);
             } else if (index == 2) {
                 ballAngle = std::stof(bytes);
