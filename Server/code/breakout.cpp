@@ -776,8 +776,7 @@ void Brick::surprise(int surpTemp) {
     else if(surpTemp == 3){
         paddle.setSize(200,35);
     }else if(surpTemp == 4){
-        Ball* balls = new Ball;
-//        balls -> ball.initiate();
+
     }
     else{
 
