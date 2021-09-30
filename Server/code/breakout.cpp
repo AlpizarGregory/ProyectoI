@@ -44,6 +44,8 @@ int life = 3;
 int level = 0;
 int score = 0;
 
+string data = "";
+
 const float startPosX = 55;
 const float startPosY = 70;
 
@@ -65,6 +67,7 @@ void Update();
 void Render();
 void HandleInput(int xPos);
 void loadLevel(int level);
+string setData();
 
 bool BallLeft(RectangleShape rect);
 bool BallRight(RectangleShape rect);
@@ -156,13 +159,28 @@ int main() {
             Update();
         }
 
+        data = setData();
+
         // Resend message
-        send(clientSocket, buf, bytesRecv + 1, 0);
+        int sendRes = send(clientSocket, data.c_str(), data.size() + 1, 0);
+
+        data = "";
 
         Render();
     }
     close(clientSocket);
     return EXIT_SUCCESS;
+}
+
+string setData() {
+    string auxData = "";
+    auxData += to_string(ball.picture.getPosition().x);
+    auxData += ",";
+    auxData += to_string(ball.picture.getPosition().y);
+    auxData += ",";
+    auxData += to_string(ball.angle);
+    auxData += ",";
+    return auxData;
 }
 
 void Initiate() {
@@ -283,7 +301,6 @@ void Update(){
                     int surpTemp = rand() % 6;
                     (bricks[i]->scoreChange());
                     (bricks[i]->surprise(surpTemp));
-                    cout << "Hit" << endl;
                 }
                 else{}
 
@@ -295,7 +312,6 @@ void Update(){
                     int surpTemp = rand() % 6;
                     (bricks[i]->scoreChange());
                     (bricks[i]->surprise(surpTemp));
-                    cout << "Hit" << endl;
                 }
 
                 else{
@@ -384,7 +400,7 @@ void HandleInput(int xPos) {
 
     if (!gameOver && !win) {
         if (xPos < (frameWidth - 100.f) && xPos > 100.f) {
-            cout << "Adentro" << endl;
+//            cout << "Adentro" << endl;
             paddle.picture.setPosition(Vector2f(xPos, paddle.picture.getPosition().y));
         }
     }
