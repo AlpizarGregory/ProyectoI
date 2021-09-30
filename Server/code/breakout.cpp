@@ -180,6 +180,8 @@ string setData() {
     auxData += ",";
     auxData += to_string(ball.angle);
     auxData += ",";
+    auxData += to_string((int)ball.speed);
+    auxData += ",";
     return auxData;
 }
 

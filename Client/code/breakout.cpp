@@ -47,6 +47,7 @@ int life = 3;
 int level = 0;
 int score = 0;
 int xMousePos = 55;
+int ballSpeed = 30;
 float xBallPos = 55;
 float yBallPos = 737;
 float ballAngle = 0;
@@ -167,6 +168,8 @@ void setGame() {
                 yBallPos = std::stof(bytes);
             } else if (index == 2) {
                 ballAngle = std::stof(bytes);
+            } else if (index == 3) {
+                ballSpeed = std::stoi(bytes);
             }
             bytes = "";
             index ++;
@@ -344,7 +347,7 @@ void Update(){
 
     if (count <= 0) {
         win = true;
-        ball.speed += 100.f;
+        ball.speed = ballSpeed;
         gameOverText.setString("Win! press \"Enter\" to next level");
 
     }
@@ -748,10 +751,10 @@ void Brick::scoreChange() {
 
 void Brick::surprise(int surpTemp) {
     if (surpTemp == 0) {
-        ball.speed = 350;
+        ball.speed = ballSpeed;
     }
     else if (surpTemp == 1){
-        ball.speed = 650;
+        ball.speed = ballSpeed;
     }
     else if (surpTemp == 2){
         paddle.setSize(100,35);
