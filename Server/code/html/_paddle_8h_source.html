@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Server Socket: Fichero Fuente Paddle.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Server Socket
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Servidor para juego Crazy Breakout</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Paddle.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_paddle_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef BREAKOUT_PADDLE_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define BREAKOUT_PADDLE_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_paddle.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_paddle.html">Paddle</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_paddle.html#a062891d9cbb69f2312a9df62f18cdf5f">   18</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_paddle.html#a062891d9cbb69f2312a9df62f18cdf5f">speed</a> = 1000.f;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_paddle.html#a631ff239db6f03e386639d77b23e0b5f">   19</a></span>&#160;    sf::RectangleShape <a class="code" href="class_paddle.html#a631ff239db6f03e386639d77b23e0b5f">picture</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_paddle.html#af9a086a34c7d555b0a9bf9a1dfb82489">initiate</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_paddle.html#a92346a0830f5583a43dc4fd652791ea7">setSize</a>(<span class="keywordtype">float</span> width, <span class="keywordtype">float</span> height);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_paddle.html#a09bc62164b1af2d90147d233758b8aef">setPosition</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_paddle_html_a631ff239db6f03e386639d77b23e0b5f"><div class="ttname"><a href="class_paddle.html#a631ff239db6f03e386639d77b23e0b5f">Paddle::picture</a></div><div class="ttdeci">sf::RectangleShape picture</div><div class="ttdef"><b>Definition:</b> Paddle.h:19</div></div>
+<div class="ttc" id="aclass_paddle_html_a09bc62164b1af2d90147d233758b8aef"><div class="ttname"><a href="class_paddle.html#a09bc62164b1af2d90147d233758b8aef">Paddle::setPosition</a></div><div class="ttdeci">void setPosition(float x, float y)</div><div class="ttdoc">setea la posicion del paddle en la pantalla</div><div class="ttdef"><b>Definition:</b> Paddle.cpp:11</div></div>
+<div class="ttc" id="aclass_paddle_html_a92346a0830f5583a43dc4fd652791ea7"><div class="ttname"><a href="class_paddle.html#a92346a0830f5583a43dc4fd652791ea7">Paddle::setSize</a></div><div class="ttdeci">void setSize(float width, float height)</div><div class="ttdoc">Setea el tamano del paddle.</div><div class="ttdef"><b>Definition:</b> Paddle.cpp:6</div></div>
+<div class="ttc" id="aclass_paddle_html_a062891d9cbb69f2312a9df62f18cdf5f"><div class="ttname"><a href="class_paddle.html#a062891d9cbb69f2312a9df62f18cdf5f">Paddle::speed</a></div><div class="ttdeci">float speed</div><div class="ttdef"><b>Definition:</b> Paddle.h:18</div></div>
+<div class="ttc" id="aclass_paddle_html_af9a086a34c7d555b0a9bf9a1dfb82489"><div class="ttname"><a href="class_paddle.html#af9a086a34c7d555b0a9bf9a1dfb82489">Paddle::initiate</a></div><div class="ttdeci">void initiate()</div><div class="ttdoc">Carga todos los elementos del juego.</div><div class="ttdef"><b>Definition:</b> Paddle.cpp:2</div></div>
+<div class="ttc" id="aclass_paddle_html"><div class="ttname"><a href="class_paddle.html">Paddle</a></div><div class="ttdef"><b>Definition:</b> Paddle.h:15</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
