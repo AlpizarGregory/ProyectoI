@@ -43,6 +43,7 @@ bool win = false;
 int life = 3;
 int level = 0;
 int score = 0;
+int surp = 6;
 
 string data = "";
 
@@ -182,6 +183,8 @@ string setData() {
     auxData += ",";
     auxData += to_string((int)ball.speed);
     auxData += ",";
+    auxData += to_string(surp);
+    auxData += ",";
     return auxData;
 }
 
@@ -263,7 +266,7 @@ void Update(){
             if (ball.angle > 1.f / 2.f*pi && ball.angle < 7.f / 8.f*pi) {
                 ball.angle += (rand() % 15) * pi / 180;
 
-           } else if (ball.angle < 1.f / 2.f*pi && ball.angle > 1.f / 8.f*pi) {
+            } else if (ball.angle < 1.f / 2.f*pi && ball.angle > 1.f / 8.f*pi) {
                 ball.angle -= (rand() % 15) * pi / 180;
 
             } else if (ball.angle <= 1.f / 8.f*pi) {
@@ -335,7 +338,7 @@ void Update(){
                 int surpTemp = rand() % 8;
                 (bricks[i]->scoreChange());
                 (bricks[i]->surprise(surpTemp));
-          }
+            }
         }
     }
 
@@ -379,8 +382,8 @@ void Render() {
                 bricks[i]->picture.setFillColor(Color(109, 130, 153, 255));
             }
             else if (bricks[i]->hp == 3) {
-                    bricks[i]->picture.setTexture(&textureBrick);
-                    bricks[i]->picture.setFillColor(Color(140, 161, 165, 255));
+                bricks[i]->picture.setTexture(&textureBrick);
+                bricks[i]->picture.setFillColor(Color(140, 161, 165, 255));
             } else {
                 bricks[i]->picture.setTexture(&textureBrick);
                 bricks[i]->picture.setFillColor(Color(213, 191, 191, 255));
@@ -434,11 +437,11 @@ void HandleInput(int xPos) {
 
     if (!gameOver) {
         if ((Keyboard::isKeyPressed(Keyboard::Left) || Keyboard::isKeyPressed(Keyboard::A)) &&
-                (paddle.picture.getPosition().x - paddle.picture.getSize().x / 2.f > 50.f)) {
+            (paddle.picture.getPosition().x - paddle.picture.getSize().x / 2.f > 50.f)) {
             paddle.picture.move(-paddle.speed * deltaTime, 0.f);
 
         } if ((Keyboard::isKeyPressed(Keyboard::Right) || Keyboard::isKeyPressed(Keyboard::D)) &&
-                (paddle.picture.getPosition().x + paddle.picture.getSize().x / 2.f < frameWidth - 50.f)) {
+              (paddle.picture.getPosition().x + paddle.picture.getSize().x / 2.f < frameWidth - 50.f)) {
             paddle.picture.move(paddle.speed * deltaTime, 0.f);
 
         }
@@ -712,9 +715,9 @@ void loadLevel(int level) {
 bool BallLeft(RectangleShape rect)
 {
     if (ball.picture.getPosition().x + ball.picture.getRadius() > rect.getPosition().x - rect.getSize().x / 2 &&
-            ball.picture.getPosition().x + ball.picture.getRadius() < rect.getPosition().x + rect.getSize().x / 2 &&
-            ball.picture.getPosition().y + ball.picture.getRadius() >= rect.getPosition().y - rect.getSize().y / 2 &&
-            ball.picture.getPosition().y - ball.picture.getRadius() <= rect.getPosition().y + rect.getSize().y / 2)
+        ball.picture.getPosition().x + ball.picture.getRadius() < rect.getPosition().x + rect.getSize().x / 2 &&
+        ball.picture.getPosition().y + ball.picture.getRadius() >= rect.getPosition().y - rect.getSize().y / 2 &&
+        ball.picture.getPosition().y - ball.picture.getRadius() <= rect.getPosition().y + rect.getSize().y / 2)
         return true;
     else
         return false;
@@ -722,9 +725,9 @@ bool BallLeft(RectangleShape rect)
 bool BallRight(RectangleShape rect)
 {
     if (ball.picture.getPosition().x - ball.picture.getRadius() > rect.getPosition().x - rect.getSize().x / 2 &&
-            ball.picture.getPosition().x - ball.picture.getRadius() < rect.getPosition().x + rect.getSize().x / 2 &&
-            ball.picture.getPosition().y + ball.picture.getRadius() >= rect.getPosition().y - rect.getSize().y / 2 &&
-            ball.picture.getPosition().y - ball.picture.getRadius() <= rect.getPosition().y + rect.getSize().y / 2)
+        ball.picture.getPosition().x - ball.picture.getRadius() < rect.getPosition().x + rect.getSize().x / 2 &&
+        ball.picture.getPosition().y + ball.picture.getRadius() >= rect.getPosition().y - rect.getSize().y / 2 &&
+        ball.picture.getPosition().y - ball.picture.getRadius() <= rect.getPosition().y + rect.getSize().y / 2)
         return true;
     else
         return false;
@@ -732,9 +735,9 @@ bool BallRight(RectangleShape rect)
 bool BallUp(RectangleShape rect)
 {
     if (ball.picture.getPosition().x + ball.picture.getRadius() >= rect.getPosition().x - rect.getSize().x / 2 &&
-            ball.picture.getPosition().x - ball.picture.getRadius() <= rect.getPosition().x + rect.getSize().x / 2 &&
-            ball.picture.getPosition().y - ball.picture.getRadius() < rect.getPosition().y + rect.getSize().y / 2 &&
-            ball.picture.getPosition().y - ball.picture.getRadius() > rect.getPosition().y - rect.getSize().y / 2)
+        ball.picture.getPosition().x - ball.picture.getRadius() <= rect.getPosition().x + rect.getSize().x / 2 &&
+        ball.picture.getPosition().y - ball.picture.getRadius() < rect.getPosition().y + rect.getSize().y / 2 &&
+        ball.picture.getPosition().y - ball.picture.getRadius() > rect.getPosition().y - rect.getSize().y / 2)
         return true;
     else
         return false;
@@ -742,9 +745,9 @@ bool BallUp(RectangleShape rect)
 bool BallBottom(RectangleShape rect)
 {
     if (ball.picture.getPosition().x + ball.picture.getRadius() >= rect.getPosition().x - rect.getSize().x / 2 &&
-            ball.picture.getPosition().x - ball.picture.getRadius() <= rect.getPosition().x + rect.getSize().x / 2 &&
-            ball.picture.getPosition().y + ball.picture.getRadius() < rect.getPosition().y + rect.getSize().y / 2 &&
-            ball.picture.getPosition().y + ball.picture.getRadius() > rect.getPosition().y - rect.getSize().y / 2)
+        ball.picture.getPosition().x - ball.picture.getRadius() <= rect.getPosition().x + rect.getSize().x / 2 &&
+        ball.picture.getPosition().y + ball.picture.getRadius() < rect.getPosition().y + rect.getSize().y / 2 &&
+        ball.picture.getPosition().y + ball.picture.getRadius() > rect.getPosition().y - rect.getSize().y / 2)
         return true;
     else
         return false;
@@ -764,6 +767,7 @@ void Brick::scoreChange() {
 }
 
 void Brick::surprise(int surpTemp) {
+    surp = surpTemp;
     if (surpTemp == 0) {
         ball.speed = 350;
     }
@@ -776,7 +780,8 @@ void Brick::surprise(int surpTemp) {
     else if(surpTemp == 3){
         paddle.setSize(200,35);
     }else if(surpTemp == 4){
-
+        Ball* balls = new Ball;
+//        balls -> ball.initiate();
     }
     else{
 

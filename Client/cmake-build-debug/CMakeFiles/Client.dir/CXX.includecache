@@ -6,19 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Ball.h
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Ball.cpp
+Ball.h
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Ball.h
+
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Ball.h
 SFML/Graphics.hpp
 -
 
-/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Brick.h
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Brick.cpp
+Brick.h
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Brick.h
+
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Brick.h
 SFML/Graphics.hpp
 -
 
-/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Paddle.h
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Paddle.cpp
+Paddle.h
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Paddle.h
+
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Paddle.h
 SFML/Graphics.hpp
 -
 
-/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/breakout.cpp
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/breakout.cpp
 SFML/Window.hpp
 -
 SFML/Graphics.hpp
@@ -30,11 +42,11 @@ iostream
 math.h
 -
 Paddle.h
-/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Paddle.h
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Paddle.h
 Ball.h
-/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Ball.h
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Ball.h
 Brick.h
-/home/alpizargregory/Documentos/Datos II/ Proyecto I/ProyectoI-DatosII/Client/code/Brick.h
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Brick.h
 unistd.h
 -
 sys/socket.h
@@ -49,4 +61,6 @@ vector
 -
 cstdlib
 -
+
+/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/tcpClient.cpp
 
