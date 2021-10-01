@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Client Socket: Fichero Fuente Brick.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Client Socket
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Cliente de juego Crazy BreakOut</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Brick.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_brick_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BREAKOUT_BRICK_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BREAKOUT_BRICK_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_brick.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_brick.html">Brick</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_brick.html#a3f84184b89f820c87f7411dab6e1b8d2">   10</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_brick.html#a3f84184b89f820c87f7411dab6e1b8d2">enable</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_brick.html#aafc70c12d4aa0c7ff97abe628fe362a3">   11</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_brick.html#aafc70c12d4aa0c7ff97abe628fe362a3">moveLeft</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_brick.html#a10f90cbf38110456246ad15a1050b84e">   12</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_brick.html#a10f90cbf38110456246ad15a1050b84e">brickScore</a> = 1;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_brick.html#a6db7c8346eebc04abfe5290f021f7131">   13</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_brick.html#a6db7c8346eebc04abfe5290f021f7131">hp</a> = 1;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_brick.html#a86787c66f629d2da7c7ae58d2dd85bbb">   14</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_brick.html#a86787c66f629d2da7c7ae58d2dd85bbb">speed</a> = 0;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_brick.html#af1996c1590264e461d17c898d96b9329">   15</a></span>&#160;    sf::RectangleShape <a class="code" href="class_brick.html#af1996c1590264e461d17c898d96b9329">picture</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_brick.html#ae403c98172d98d6e4c47b939b7083cef">initiate</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_brick.html#a68e6ede9f9a5cb19bf2bf21d12a8f172">setSize</a>(<span class="keywordtype">float</span> width, <span class="keywordtype">float</span> height);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_brick.html#a9a70acd7ecddeb3aacdd71855edf8b37">setPosition</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_brick.html#acf6071a482a67443e9c67a90861d91e4">hit</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_brick.html#a28ab1141dc359fbc7b65dee080b9c6b6">scoreChange</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_brick.html#a9ab21b6d94ac6f5d0dd229fad29d6513">surprise</a>(<span class="keywordtype">int</span> <a class="code" href="breakout_8cpp.html#af419004d6b47233abe99b3bcbbf8e046">surpTemp</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_brick_html_a86787c66f629d2da7c7ae58d2dd85bbb"><div class="ttname"><a href="class_brick.html#a86787c66f629d2da7c7ae58d2dd85bbb">Brick::speed</a></div><div class="ttdeci">float speed</div><div class="ttdef"><b>Definition:</b> Brick.h:14</div></div>
+<div class="ttc" id="aclass_brick_html_af1996c1590264e461d17c898d96b9329"><div class="ttname"><a href="class_brick.html#af1996c1590264e461d17c898d96b9329">Brick::picture</a></div><div class="ttdeci">sf::RectangleShape picture</div><div class="ttdef"><b>Definition:</b> Brick.h:15</div></div>
+<div class="ttc" id="aclass_brick_html_a68e6ede9f9a5cb19bf2bf21d12a8f172"><div class="ttname"><a href="class_brick.html#a68e6ede9f9a5cb19bf2bf21d12a8f172">Brick::setSize</a></div><div class="ttdeci">void setSize(float width, float height)</div><div class="ttdoc">Setea el tamano del Brick.</div><div class="ttdef"><b>Definition:</b> Brick.cpp:11</div></div>
+<div class="ttc" id="aclass_brick_html_a3f84184b89f820c87f7411dab6e1b8d2"><div class="ttname"><a href="class_brick.html#a3f84184b89f820c87f7411dab6e1b8d2">Brick::enable</a></div><div class="ttdeci">bool enable</div><div class="ttdef"><b>Definition:</b> Brick.h:10</div></div>
+<div class="ttc" id="aclass_brick_html_ae403c98172d98d6e4c47b939b7083cef"><div class="ttname"><a href="class_brick.html#ae403c98172d98d6e4c47b939b7083cef">Brick::initiate</a></div><div class="ttdeci">void initiate()</div><div class="ttdoc">Carga todos los elementos del Brick.</div><div class="ttdef"><b>Definition:</b> Brick.cpp:7</div></div>
+<div class="ttc" id="aclass_brick_html_a10f90cbf38110456246ad15a1050b84e"><div class="ttname"><a href="class_brick.html#a10f90cbf38110456246ad15a1050b84e">Brick::brickScore</a></div><div class="ttdeci">int brickScore</div><div class="ttdef"><b>Definition:</b> Brick.h:12</div></div>
+<div class="ttc" id="abreakout_8cpp_html_af419004d6b47233abe99b3bcbbf8e046"><div class="ttname"><a href="breakout_8cpp.html#af419004d6b47233abe99b3bcbbf8e046">surpTemp</a></div><div class="ttdeci">int surpTemp</div><div class="ttdef"><b>Definition:</b> breakout.cpp:51</div></div>
+<div class="ttc" id="aclass_brick_html"><div class="ttname"><a href="class_brick.html">Brick</a></div><div class="ttdef"><b>Definition:</b> Brick.h:6</div></div>
+<div class="ttc" id="aclass_brick_html_a28ab1141dc359fbc7b65dee080b9c6b6"><div class="ttname"><a href="class_brick.html#a28ab1141dc359fbc7b65dee080b9c6b6">Brick::scoreChange</a></div><div class="ttdeci">void scoreChange()</div><div class="ttdoc">Metodo de Puntajes.</div><div class="ttdef"><b>Definition:</b> breakout.cpp:742</div></div>
+<div class="ttc" id="aclass_brick_html_aafc70c12d4aa0c7ff97abe628fe362a3"><div class="ttname"><a href="class_brick.html#aafc70c12d4aa0c7ff97abe628fe362a3">Brick::moveLeft</a></div><div class="ttdeci">bool moveLeft</div><div class="ttdef"><b>Definition:</b> Brick.h:11</div></div>
+<div class="ttc" id="aclass_brick_html_a6db7c8346eebc04abfe5290f021f7131"><div class="ttname"><a href="class_brick.html#a6db7c8346eebc04abfe5290f021f7131">Brick::hp</a></div><div class="ttdeci">int hp</div><div class="ttdef"><b>Definition:</b> Brick.h:13</div></div>
+<div class="ttc" id="aclass_brick_html_acf6071a482a67443e9c67a90861d91e4"><div class="ttname"><a href="class_brick.html#acf6071a482a67443e9c67a90861d91e4">Brick::hit</a></div><div class="ttdeci">virtual bool hit()</div><div class="ttdoc">Metodo hit que le reduce la vida o elimina al brick.</div><div class="ttdef"><b>Definition:</b> Brick.cpp:20</div></div>
+<div class="ttc" id="aclass_brick_html_a9ab21b6d94ac6f5d0dd229fad29d6513"><div class="ttname"><a href="class_brick.html#a9ab21b6d94ac6f5d0dd229fad29d6513">Brick::surprise</a></div><div class="ttdeci">void surprise(int surpTemp)</div><div class="ttdoc">Metodo que maneja las sorpresas.</div><div class="ttdef"><b>Definition:</b> breakout.cpp:754</div></div>
+<div class="ttc" id="aclass_brick_html_a9a70acd7ecddeb3aacdd71855edf8b37"><div class="ttname"><a href="class_brick.html#a9a70acd7ecddeb3aacdd71855edf8b37">Brick::setPosition</a></div><div class="ttdeci">void setPosition(float x, float y)</div><div class="ttdoc">Setea posicion del Brick en la pantalla.</div><div class="ttdef"><b>Definition:</b> Brick.cpp:16</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

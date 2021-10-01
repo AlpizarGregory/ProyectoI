@@ -1,0 +1,887 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Client Socket: Referencia del Archivo breakout.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Client Socket
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Cliente de juego Crazy BreakOut</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo breakout.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;SFML/Window.hpp&gt;</code><br />
+<code>#include &lt;SFML/Graphics.hpp&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_paddle_8h_source.html">Paddle.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_ball_8h_source.html">Ball.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_brick_8h_source.html">Brick.h</a>&quot;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;sys/socket.h&gt;</code><br />
+<code>#include &lt;arpa/inet.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Dependencia gráfica adjunta para breakout.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="breakout_8cpp__incl.png" border="0" usemap="#breakout_8cpp" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ab43bd356f22f09bb56784ffac7aa88f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#ab43bd356f22f09bb56784ffac7aa88f9">Initiate</a> ()</td></tr>
+<tr class="separator:ab43bd356f22f09bb56784ffac7aa88f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372de693ad40b3f42839c8ec6ac845f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a372de693ad40b3f42839c8ec6ac845f4">Reset</a> ()</td></tr>
+<tr class="separator:a372de693ad40b3f42839c8ec6ac845f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec0783b5a136e042adcc47bae4fe5291"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#aec0783b5a136e042adcc47bae4fe5291">Update</a> ()</td></tr>
+<tr class="separator:aec0783b5a136e042adcc47bae4fe5291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436830dff9fbce05c931c5a6d8d5366d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a436830dff9fbce05c931c5a6d8d5366d">Render</a> ()</td></tr>
+<tr class="separator:a436830dff9fbce05c931c5a6d8d5366d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fcda37dfe328f576ec0921d8ec462d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a1fcda37dfe328f576ec0921d8ec462d5">HandleInput</a> ()</td></tr>
+<tr class="separator:a1fcda37dfe328f576ec0921d8ec462d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc49b25dbb0701a54a4d5cd239725c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a7fc49b25dbb0701a54a4d5cd239725c2">loadLevel</a> (int <a class="el" href="breakout_8cpp.html#acf4d33ee4cff36f69b924471174dcb11">level</a>)</td></tr>
+<tr class="separator:a7fc49b25dbb0701a54a4d5cd239725c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0857d999916fe5b2f78a2dd5a24b8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#aef0857d999916fe5b2f78a2dd5a24b8c">setGame</a> ()</td></tr>
+<tr class="separator:aef0857d999916fe5b2f78a2dd5a24b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d7a896cda5a8a239b071fffdadacd25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a0d7a896cda5a8a239b071fffdadacd25">BallLeft</a> (RectangleShape rect)</td></tr>
+<tr class="separator:a0d7a896cda5a8a239b071fffdadacd25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097d333d9376517c852d1c01aa861757"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a097d333d9376517c852d1c01aa861757">BallRight</a> (RectangleShape rect)</td></tr>
+<tr class="separator:a097d333d9376517c852d1c01aa861757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa70712e2e38eb77a3c11219c88968d0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#aa70712e2e38eb77a3c11219c88968d0d">BallUp</a> (RectangleShape rect)</td></tr>
+<tr class="separator:aa70712e2e38eb77a3c11219c88968d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a974f29b101cb493013863ede65275dde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a974f29b101cb493013863ede65275dde">BallBottom</a> (RectangleShape rect)</td></tr>
+<tr class="separator:a974f29b101cb493013863ede65275dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a59871346937cdd0745e153445f1d5b05"><td class="memItemLeft" align="right" valign="top">RenderWindow&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a59871346937cdd0745e153445f1d5b05">window</a></td></tr>
+<tr class="separator:a59871346937cdd0745e153445f1d5b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e52b0778d1df763fc5b497c26ead7a9"><td class="memItemLeft" align="right" valign="top">Font&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a1e52b0778d1df763fc5b497c26ead7a9">font</a></td></tr>
+<tr class="separator:a1e52b0778d1df763fc5b497c26ead7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a688087a827e11a7e6135e9d4f4406d65"><td class="memItemLeft" align="right" valign="top">Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a688087a827e11a7e6135e9d4f4406d65">gameOverText</a></td></tr>
+<tr class="separator:a688087a827e11a7e6135e9d4f4406d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada498f130267d23a36840283158d20d5"><td class="memItemLeft" align="right" valign="top">Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#ada498f130267d23a36840283158d20d5">lifeText</a></td></tr>
+<tr class="separator:ada498f130267d23a36840283158d20d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08e90ba57c565433d6583d0e2556a9a7"><td class="memItemLeft" align="right" valign="top">Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a08e90ba57c565433d6583d0e2556a9a7">scoreText</a></td></tr>
+<tr class="separator:a08e90ba57c565433d6583d0e2556a9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce8f0db8a5282e441988c8d2e73f79e"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#abce8f0db8a5282e441988c8d2e73f79e">pi</a> = 3.14159f</td></tr>
+<tr class="separator:abce8f0db8a5282e441988c8d2e73f79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbd74d905a52bdcb0b21f0b8b4fcc1ba"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#abbd74d905a52bdcb0b21f0b8b4fcc1ba">data</a> = &quot;&quot;</td></tr>
+<tr class="separator:abbd74d905a52bdcb0b21f0b8b4fcc1ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c1b05d66edb6c1293359e6ef140ea4d"><td class="memItemLeft" align="right" valign="top">Clock&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a5c1b05d66edb6c1293359e6ef140ea4d">gameClock</a></td></tr>
+<tr class="separator:a5c1b05d66edb6c1293359e6ef140ea4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a61318ed6aa02b4ff346e7eb8f68891"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a1a61318ed6aa02b4ff346e7eb8f68891">deltaTime</a></td></tr>
+<tr class="separator:a1a61318ed6aa02b4ff346e7eb8f68891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee78e8942a842be44aa8592bca6a979"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a4ee78e8942a842be44aa8592bca6a979">frameWidth</a> = 800</td></tr>
+<tr class="separator:a4ee78e8942a842be44aa8592bca6a979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56bc3cb64fa74f13ecdf031d44e15a78"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a56bc3cb64fa74f13ecdf031d44e15a78">frameHeight</a> = 800</td></tr>
+<tr class="separator:a56bc3cb64fa74f13ecdf031d44e15a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0448fec049217e428b9ec21c03e51d52"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a0448fec049217e428b9ec21c03e51d52">playing</a> = false</td></tr>
+<tr class="separator:a0448fec049217e428b9ec21c03e51d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb9f73c50443018c691b0eaf1066004"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a1fb9f73c50443018c691b0eaf1066004">gameOver</a> = false</td></tr>
+<tr class="separator:a1fb9f73c50443018c691b0eaf1066004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a568f8fc25455991c59ab8f2ca95e7017"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a568f8fc25455991c59ab8f2ca95e7017">win</a> = false</td></tr>
+<tr class="separator:a568f8fc25455991c59ab8f2ca95e7017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf488ff0ce8098cd956c07890cbc5d50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#adf488ff0ce8098cd956c07890cbc5d50">life</a> = 3</td></tr>
+<tr class="separator:adf488ff0ce8098cd956c07890cbc5d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf4d33ee4cff36f69b924471174dcb11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#acf4d33ee4cff36f69b924471174dcb11">level</a> = 0</td></tr>
+<tr class="separator:acf4d33ee4cff36f69b924471174dcb11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef160b7437d94056f1dc59646cd5b87d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#aef160b7437d94056f1dc59646cd5b87d">score</a> = 0</td></tr>
+<tr class="separator:aef160b7437d94056f1dc59646cd5b87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a1b0463425186e896066fa12a9c628b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a2a1b0463425186e896066fa12a9c628b">xMousePos</a> = 55</td></tr>
+<tr class="separator:a2a1b0463425186e896066fa12a9c628b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f201ef90a451aca75d129ecc5fc95e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a64f201ef90a451aca75d129ecc5fc95e">ballSpeed</a> = 30</td></tr>
+<tr class="separator:a64f201ef90a451aca75d129ecc5fc95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af419004d6b47233abe99b3bcbbf8e046"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#af419004d6b47233abe99b3bcbbf8e046">surpTemp</a> = 6</td></tr>
+<tr class="separator:af419004d6b47233abe99b3bcbbf8e046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f3a17dc91f0b6f7616f969b8385a48"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#af2f3a17dc91f0b6f7616f969b8385a48">xBallPos</a> = 55</td></tr>
+<tr class="separator:af2f3a17dc91f0b6f7616f969b8385a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abad1c40650364bfc0ea0fd00760376d8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#abad1c40650364bfc0ea0fd00760376d8">yBallPos</a> = 737</td></tr>
+<tr class="separator:abad1c40650364bfc0ea0fd00760376d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fcda2c747b3853d05cf0491dea9e8cb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a2fcda2c747b3853d05cf0491dea9e8cb">ballAngle</a> = 0</td></tr>
+<tr class="separator:a2fcda2c747b3853d05cf0491dea9e8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c03e662bc8ced4d5d27d413650d777"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#ab9c03e662bc8ced4d5d27d413650d777">startPosX</a> = 55</td></tr>
+<tr class="separator:ab9c03e662bc8ced4d5d27d413650d777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4198d4516fab8c17a28b8486ec2e0619"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a4198d4516fab8c17a28b8486ec2e0619">startPosY</a> = 70</td></tr>
+<tr class="separator:a4198d4516fab8c17a28b8486ec2e0619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93be4e7bf35cde28e9d7995a93009da0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_paddle.html">Paddle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a93be4e7bf35cde28e9d7995a93009da0">paddle</a></td></tr>
+<tr class="separator:a93be4e7bf35cde28e9d7995a93009da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15de41d45a60a7649d561f53ca88352c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ball.html">Ball</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a15de41d45a60a7649d561f53ca88352c">ball</a></td></tr>
+<tr class="separator:a15de41d45a60a7649d561f53ca88352c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c0c5f3781e1fecc09dfbc0d90d44d4a"><td class="memItemLeft" align="right" valign="top">Texture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a4c0c5f3781e1fecc09dfbc0d90d44d4a">textureBall</a></td></tr>
+<tr class="separator:a4c0c5f3781e1fecc09dfbc0d90d44d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a032c10b7dcbaf147465c6c6c03096ccf"><td class="memItemLeft" align="right" valign="top">RectangleShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a032c10b7dcbaf147465c6c6c03096ccf">background</a></td></tr>
+<tr class="separator:a032c10b7dcbaf147465c6c6c03096ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a50094e2e6379fe813e4ce84e350c5"><td class="memItemLeft" align="right" valign="top">Texture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#ae7a50094e2e6379fe813e4ce84e350c5">textureBack</a></td></tr>
+<tr class="separator:ae7a50094e2e6379fe813e4ce84e350c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5676ef41c8ef0afbc3ce280eaa908ed2"><td class="memItemLeft" align="right" valign="top">Texture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a5676ef41c8ef0afbc3ce280eaa908ed2">texturePaddle</a></td></tr>
+<tr class="separator:a5676ef41c8ef0afbc3ce280eaa908ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10097fb89f8ceccf052a1537e49e7126"><td class="memItemLeft" align="right" valign="top">Texture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a10097fb89f8ceccf052a1537e49e7126">textureBrick</a></td></tr>
+<tr class="separator:a10097fb89f8ceccf052a1537e49e7126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eaefba80703c2d14113defa9464a3f2"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="class_brick.html">Brick</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#a0eaefba80703c2d14113defa9464a3f2">bricks</a></td></tr>
+<tr class="separator:a0eaefba80703c2d14113defa9464a3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad37694ce2437e94ac42f02fdc259f2fd"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="class_ball.html">Ball</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakout_8cpp.html#ad37694ce2437e94ac42f02fdc259f2fd">balls</a></td></tr>
+<tr class="separator:ad37694ce2437e94ac42f02fdc259f2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a974f29b101cb493013863ede65275dde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a974f29b101cb493013863ede65275dde">&#9670;&nbsp;</a></span>BallBottom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BallBottom </td>
+          <td>(</td>
+          <td class="paramtype">RectangleShape&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d7a896cda5a8a239b071fffdadacd25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d7a896cda5a8a239b071fffdadacd25">&#9670;&nbsp;</a></span>BallLeft()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BallLeft </td>
+          <td>(</td>
+          <td class="paramtype">RectangleShape&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a097d333d9376517c852d1c01aa861757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a097d333d9376517c852d1c01aa861757">&#9670;&nbsp;</a></span>BallRight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BallRight </td>
+          <td>(</td>
+          <td class="paramtype">RectangleShape&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa70712e2e38eb77a3c11219c88968d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa70712e2e38eb77a3c11219c88968d0d">&#9670;&nbsp;</a></span>BallUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BallUp </td>
+          <td>(</td>
+          <td class="paramtype">RectangleShape&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1fcda37dfe328f576ec0921d8ec462d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fcda37dfe328f576ec0921d8ec462d5">&#9670;&nbsp;</a></span>HandleInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HandleInput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab43bd356f22f09bb56784ffac7aa88f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab43bd356f22f09bb56784ffac7aa88f9">&#9670;&nbsp;</a></span>Initiate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Initiate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7fc49b25dbb0701a54a4d5cd239725c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc49b25dbb0701a54a4d5cd239725c2">&#9670;&nbsp;</a></span>loadLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loadLevel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a436830dff9fbce05c931c5a6d8d5366d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a436830dff9fbce05c931c5a6d8d5366d">&#9670;&nbsp;</a></span>Render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Render </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a372de693ad40b3f42839c8ec6ac845f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372de693ad40b3f42839c8ec6ac845f4">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef0857d999916fe5b2f78a2dd5a24b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef0857d999916fe5b2f78a2dd5a24b8c">&#9670;&nbsp;</a></span>setGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setGame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec0783b5a136e042adcc47bae4fe5291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec0783b5a136e042adcc47bae4fe5291">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="a032c10b7dcbaf147465c6c6c03096ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a032c10b7dcbaf147465c6c6c03096ccf">&#9670;&nbsp;</a></span>background</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RectangleShape background</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15de41d45a60a7649d561f53ca88352c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15de41d45a60a7649d561f53ca88352c">&#9670;&nbsp;</a></span>ball</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ball.html">Ball</a> ball</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2fcda2c747b3853d05cf0491dea9e8cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fcda2c747b3853d05cf0491dea9e8cb">&#9670;&nbsp;</a></span>ballAngle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ballAngle = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad37694ce2437e94ac42f02fdc259f2fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad37694ce2437e94ac42f02fdc259f2fd">&#9670;&nbsp;</a></span>balls</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="class_ball.html">Ball</a>*&gt; balls</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64f201ef90a451aca75d129ecc5fc95e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64f201ef90a451aca75d129ecc5fc95e">&#9670;&nbsp;</a></span>ballSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ballSpeed = 30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0eaefba80703c2d14113defa9464a3f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eaefba80703c2d14113defa9464a3f2">&#9670;&nbsp;</a></span>bricks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="class_brick.html">Brick</a>*&gt; bricks</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbd74d905a52bdcb0b21f0b8b4fcc1ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbd74d905a52bdcb0b21f0b8b4fcc1ba">&#9670;&nbsp;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string data = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a61318ed6aa02b4ff346e7eb8f68891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a61318ed6aa02b4ff346e7eb8f68891">&#9670;&nbsp;</a></span>deltaTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float deltaTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e52b0778d1df763fc5b497c26ead7a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e52b0778d1df763fc5b497c26ead7a9">&#9670;&nbsp;</a></span>font</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Font font</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56bc3cb64fa74f13ecdf031d44e15a78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56bc3cb64fa74f13ecdf031d44e15a78">&#9670;&nbsp;</a></span>frameHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float frameHeight = 800</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ee78e8942a842be44aa8592bca6a979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee78e8942a842be44aa8592bca6a979">&#9670;&nbsp;</a></span>frameWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float frameWidth = 800</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c1b05d66edb6c1293359e6ef140ea4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c1b05d66edb6c1293359e6ef140ea4d">&#9670;&nbsp;</a></span>gameClock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Clock gameClock</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1fb9f73c50443018c691b0eaf1066004"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fb9f73c50443018c691b0eaf1066004">&#9670;&nbsp;</a></span>gameOver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gameOver = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a688087a827e11a7e6135e9d4f4406d65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a688087a827e11a7e6135e9d4f4406d65">&#9670;&nbsp;</a></span>gameOverText</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Text gameOverText</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf4d33ee4cff36f69b924471174dcb11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf4d33ee4cff36f69b924471174dcb11">&#9670;&nbsp;</a></span>level</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int level = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf488ff0ce8098cd956c07890cbc5d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf488ff0ce8098cd956c07890cbc5d50">&#9670;&nbsp;</a></span>life</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int life = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada498f130267d23a36840283158d20d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada498f130267d23a36840283158d20d5">&#9670;&nbsp;</a></span>lifeText</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Text lifeText</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93be4e7bf35cde28e9d7995a93009da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93be4e7bf35cde28e9d7995a93009da0">&#9670;&nbsp;</a></span>paddle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_paddle.html">Paddle</a> paddle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abce8f0db8a5282e441988c8d2e73f79e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abce8f0db8a5282e441988c8d2e73f79e">&#9670;&nbsp;</a></span>pi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float pi = 3.14159f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0448fec049217e428b9ec21c03e51d52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0448fec049217e428b9ec21c03e51d52">&#9670;&nbsp;</a></span>playing</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool playing = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef160b7437d94056f1dc59646cd5b87d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef160b7437d94056f1dc59646cd5b87d">&#9670;&nbsp;</a></span>score</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int score = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08e90ba57c565433d6583d0e2556a9a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08e90ba57c565433d6583d0e2556a9a7">&#9670;&nbsp;</a></span>scoreText</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Text scoreText</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9c03e662bc8ced4d5d27d413650d777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9c03e662bc8ced4d5d27d413650d777">&#9670;&nbsp;</a></span>startPosX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float startPosX = 55</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4198d4516fab8c17a28b8486ec2e0619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4198d4516fab8c17a28b8486ec2e0619">&#9670;&nbsp;</a></span>startPosY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float startPosY = 70</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af419004d6b47233abe99b3bcbbf8e046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af419004d6b47233abe99b3bcbbf8e046">&#9670;&nbsp;</a></span>surpTemp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int surpTemp = 6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7a50094e2e6379fe813e4ce84e350c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a50094e2e6379fe813e4ce84e350c5">&#9670;&nbsp;</a></span>textureBack</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Texture textureBack</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c0c5f3781e1fecc09dfbc0d90d44d4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c0c5f3781e1fecc09dfbc0d90d44d4a">&#9670;&nbsp;</a></span>textureBall</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Texture textureBall</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10097fb89f8ceccf052a1537e49e7126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10097fb89f8ceccf052a1537e49e7126">&#9670;&nbsp;</a></span>textureBrick</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Texture textureBrick</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5676ef41c8ef0afbc3ce280eaa908ed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5676ef41c8ef0afbc3ce280eaa908ed2">&#9670;&nbsp;</a></span>texturePaddle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Texture texturePaddle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a568f8fc25455991c59ab8f2ca95e7017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a568f8fc25455991c59ab8f2ca95e7017">&#9670;&nbsp;</a></span>win</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool win = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59871346937cdd0745e153445f1d5b05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59871346937cdd0745e153445f1d5b05">&#9670;&nbsp;</a></span>window</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RenderWindow window</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2f3a17dc91f0b6f7616f969b8385a48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2f3a17dc91f0b6f7616f969b8385a48">&#9670;&nbsp;</a></span>xBallPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float xBallPos = 55</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a1b0463425186e896066fa12a9c628b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a1b0463425186e896066fa12a9c628b">&#9670;&nbsp;</a></span>xMousePos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int xMousePos = 55</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abad1c40650364bfc0ea0fd00760376d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abad1c40650364bfc0ea0fd00760376d8">&#9670;&nbsp;</a></span>yBallPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float yBallPos = 737</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
