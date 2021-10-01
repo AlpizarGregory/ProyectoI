@@ -53,10 +53,10 @@ RM = /snap/clion/164/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client"
+CMAKE_SOURCE_DIR = "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/cmake-build-debug"
+CMAKE_BINARY_DIR = "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Client.dir/depend.make
@@ -68,68 +68,68 @@ include CMakeFiles/Client.dir/flags.make
 
 CMakeFiles/Client.dir/code/tcpClient.cpp.o: CMakeFiles/Client.dir/flags.make
 CMakeFiles/Client.dir/code/tcpClient.cpp.o: ../code/tcpClient.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Client.dir/code/tcpClient.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/code/tcpClient.cpp.o -c "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/tcpClient.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Client.dir/code/tcpClient.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/code/tcpClient.cpp.o -c "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/code/tcpClient.cpp"
 
 CMakeFiles/Client.dir/code/tcpClient.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/code/tcpClient.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/tcpClient.cpp" > CMakeFiles/Client.dir/code/tcpClient.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/code/tcpClient.cpp" > CMakeFiles/Client.dir/code/tcpClient.cpp.i
 
 CMakeFiles/Client.dir/code/tcpClient.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/code/tcpClient.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/tcpClient.cpp" -o CMakeFiles/Client.dir/code/tcpClient.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/code/tcpClient.cpp" -o CMakeFiles/Client.dir/code/tcpClient.cpp.s
 
 CMakeFiles/Client.dir/code/breakout.cpp.o: CMakeFiles/Client.dir/flags.make
 CMakeFiles/Client.dir/code/breakout.cpp.o: ../code/breakout.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Client.dir/code/breakout.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/code/breakout.cpp.o -c "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/breakout.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Client.dir/code/breakout.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/code/breakout.cpp.o -c "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/code/breakout.cpp"
 
 CMakeFiles/Client.dir/code/breakout.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/code/breakout.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/breakout.cpp" > CMakeFiles/Client.dir/code/breakout.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/code/breakout.cpp" > CMakeFiles/Client.dir/code/breakout.cpp.i
 
 CMakeFiles/Client.dir/code/breakout.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/code/breakout.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/breakout.cpp" -o CMakeFiles/Client.dir/code/breakout.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/code/breakout.cpp" -o CMakeFiles/Client.dir/code/breakout.cpp.s
 
 CMakeFiles/Client.dir/code/Brick.cpp.o: CMakeFiles/Client.dir/flags.make
 CMakeFiles/Client.dir/code/Brick.cpp.o: ../code/Brick.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Client.dir/code/Brick.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/code/Brick.cpp.o -c "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Brick.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Client.dir/code/Brick.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/code/Brick.cpp.o -c "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/code/Brick.cpp"
 
 CMakeFiles/Client.dir/code/Brick.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/code/Brick.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Brick.cpp" > CMakeFiles/Client.dir/code/Brick.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/code/Brick.cpp" > CMakeFiles/Client.dir/code/Brick.cpp.i
 
 CMakeFiles/Client.dir/code/Brick.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/code/Brick.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Brick.cpp" -o CMakeFiles/Client.dir/code/Brick.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/code/Brick.cpp" -o CMakeFiles/Client.dir/code/Brick.cpp.s
 
 CMakeFiles/Client.dir/code/Paddle.cpp.o: CMakeFiles/Client.dir/flags.make
 CMakeFiles/Client.dir/code/Paddle.cpp.o: ../code/Paddle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Client.dir/code/Paddle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/code/Paddle.cpp.o -c "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Paddle.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Client.dir/code/Paddle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/code/Paddle.cpp.o -c "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/code/Paddle.cpp"
 
 CMakeFiles/Client.dir/code/Paddle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/code/Paddle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Paddle.cpp" > CMakeFiles/Client.dir/code/Paddle.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/code/Paddle.cpp" > CMakeFiles/Client.dir/code/Paddle.cpp.i
 
 CMakeFiles/Client.dir/code/Paddle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/code/Paddle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Paddle.cpp" -o CMakeFiles/Client.dir/code/Paddle.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/code/Paddle.cpp" -o CMakeFiles/Client.dir/code/Paddle.cpp.s
 
 CMakeFiles/Client.dir/code/Ball.cpp.o: CMakeFiles/Client.dir/flags.make
 CMakeFiles/Client.dir/code/Ball.cpp.o: ../code/Ball.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Client.dir/code/Ball.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/code/Ball.cpp.o -c "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Ball.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Client.dir/code/Ball.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Client.dir/code/Ball.cpp.o -c "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/code/Ball.cpp"
 
 CMakeFiles/Client.dir/code/Ball.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/code/Ball.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Ball.cpp" > CMakeFiles/Client.dir/code/Ball.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/code/Ball.cpp" > CMakeFiles/Client.dir/code/Ball.cpp.i
 
 CMakeFiles/Client.dir/code/Ball.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/code/Ball.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/code/Ball.cpp" -o CMakeFiles/Client.dir/code/Ball.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/code/Ball.cpp" -o CMakeFiles/Client.dir/code/Ball.cpp.s
 
 # Object files for target Client
 Client_OBJECTS = \
@@ -153,7 +153,7 @@ Client: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 Client: /usr/lib/x86_64-linux-gnu/libsfml-network.so.2.5.1
 Client: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 Client: CMakeFiles/Client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -165,6 +165,6 @@ CMakeFiles/Client.dir/clean:
 .PHONY : CMakeFiles/Client.dir/clean
 
 CMakeFiles/Client.dir/depend:
-	cd "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client" "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client" "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/cmake-build-debug" "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/cmake-build-debug" "/home/alpizargregory/Documentos/Datos II/ Proyecto I/Client/cmake-build-debug/CMakeFiles/Client.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client" "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client" "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/cmake-build-debug" "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/cmake-build-debug" "/home/alpizargregory/Documentos/Datos II/Proyecto I/Client/cmake-build-debug/CMakeFiles/Client.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Client.dir/depend
 
